@@ -1,16 +1,29 @@
 ---
-
+import Card from "../components/Card.astro";
+import Main from "../components/Main.astro";
+import Layout from "../layout/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+    <Main />
+    <section class="flex flex-col justify-center items-center gap-12">
+        <span class="text-4xl font-bold flex flex-col text-center">
+            <font>Que necesitas conocer</font>
+            <font>sobre la Universidad</font>
+        </span>
+        <div class="grid grid-cols-3 gap-10 pl-10 pr-10">
+            <Card />
+            <Card />
+            <Card />
+        </div>
+        <div
+            class="bg-white rounded-2xl p-10 flex flex-col justify-center items-center gap-4"
+        >
+            <span class="text-4xl font-bold flex flex-col text-center">
+                <font>Que es el Pensum</font>
+            </span>
+            <a href="">Mirar nuestro pensum</a>
+            <a href="">Conocer mas sobre las materias</a>
+        </div>
+    </section>
+</Layout>
