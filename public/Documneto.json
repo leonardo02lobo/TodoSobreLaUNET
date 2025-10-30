@@ -1,0 +1,106 @@
+[
+  {
+    "titulo": "Unidad Crédito",
+    "descripcion": "Es el valor académico equivalente de una Unidad Curricular según el número de horas semanales u horas totales que ésta posee, en el lapso académico."
+  },
+  {
+    "titulo": "Carga académica",
+    "descripcion": "Es el valor de unidades de crédito tomadas por el estudiante, durante un lapso académico regular, de acuerdo a lo dispuesto en el plan de estudio."
+  },
+  {
+    "titulo": "Unidad Curricular",
+    "descripcion": "Es cada uno de los elementos académicos componentes del plan de estudio de una carrera determinada, mediante los cuales se definen los aprendizajes y competencias requeridas."
+  },
+  {
+    "titulo": "Dispersión permitida para la inscripción de Unidades Curriculares",
+    "descripcion": "La máxima dispersión permitida a un estudiante será uno superior y otro inferior al semestre donde se encuentre el mayor número de unidades curriculares inscritas, respetando las prelaciones exigidas. En todo caso, el estudiante deberá inscribir las unidades curriculares correspondientes al semestre más bajo por culminar."
+  },
+  {
+    "titulo": "Estudiante Regular",
+    "descripcion": "Es el estudiante inscrito para cursar el primer semestre o aquel que obtenga un Índice Académico Acumulado igual o superior a 5,10."
+  },
+  {
+    "titulo": "Carga académica de un estudiante regular",
+    "descripcion": "En un lapso académico, podrá inscribir una carga académica mínima de 10 o máxima de 21 Unidades Crédito."
+  },
+  {
+    "titulo": "Baja Carga",
+    "descripcion": "El estudiante que en un lapso académico inscriba menos de 10 unidades crédito."
+  },
+  {
+    "titulo": "Período de Prueba",
+    "descripcion": "Todo estudiante que obtenga un índice académico acumulado inferior a 5,10 pero igual o superior a 3,60 se considera estudiante en período de prueba. Tiene derecho a un máximo de tres períodos de prueba consecutivos o no."
+  },
+  {
+    "titulo": "Carga máxima de un estudiante en período de prueba",
+    "descripcion": "Entre 6 y 10 Unidades Crédito, pudiendo existir la diferencia de dos unidades por exceso y una unidad por defecto."
+  },
+  {
+    "titulo": "Índice de Eficiencia",
+    "descripcion": "Es la relación que existe entre las unidades crédito aprobadas y las unidades crédito cursadas. El estudiante con un índice igual o superior a 0,70 podrá solicitar permisos especiales."
+  },
+  {
+    "titulo": "Retiro de Unidades Curriculares",
+    "descripcion": "Es el proceso mediante el cual se anula la inscripción de una unidad curricular sin consecuencias académicas negativas. Puede retirarse hasta un máximo de 12 unidades curriculares durante la carrera, salvo las inscritas bajo régimen especial."
+  },
+  {
+    "titulo": "Retiro de Unidades Curriculares en el Primer Semestre",
+    "descripcion": "Los estudiantes nuevos inscritos para cursar el primer semestre podrán retirar un máximo de una (1) Unidad Curricular."
+  },
+  {
+    "titulo": "Abandono de una unidad curricular",
+    "descripcion": "Cuando un estudiante abandone una unidad curricular sin formalizar su retiro, las calificaciones obtenidas se reflejarán en la calificación definitiva. La nota mínima es 1 punto."
+  },
+  {
+    "titulo": "Retiro de la Universidad",
+    "descripcion": "Es el acto mediante el cual el estudiante comunica formalmente su decisión de separarse de las actividades académicas regulares."
+  },
+  {
+    "titulo": "Retiro de Semestre",
+    "descripcion": "Puede realizarse con o sin desincorporación. Con desincorporación: las calificaciones no se toman en cuenta para el Índice Académico. Sin desincorporación: las calificaciones sí se toman en cuenta."
+  },
+  {
+    "titulo": "Reingreso",
+    "descripcion": "Es el acto por el cual un estudiante es autorizado a continuar sus estudios tras cumplir con los requisitos. Tiene hasta 3 oportunidades de reingresar y depende de no haber perdido su derecho a inscripción."
+  },
+  {
+    "titulo": "Evaluación Parcial",
+    "descripcion": "Es el resultado de una o más actividades de evaluación planificadas, representadas en una escala de 1 a 100 puntos."
+  },
+  {
+    "titulo": "Evaluación Diferida",
+    "descripcion": "Es una evaluación aplicada dentro de los 5 días hábiles posteriores a la entrega a Control de Estudios para estudiantes que no presentaron una evaluación parcial por causas justificadas."
+  },
+  {
+    "titulo": "Evaluación de Suficiencia",
+    "descripcion": "Permite aprobar una unidad curricular mediante una evaluación especial donde el estudiante demuestra poseer los conocimientos necesarios."
+  },
+  {
+    "titulo": "Calificaciones",
+    "descripcion": "Las calificaciones se expresan en números enteros del 1 al 9. Son aprobatorias del 5 al 9 y reprobatorias del 1 al 4."
+  },
+  {
+    "titulo": "Revisión de Examen",
+    "descripcion": "El docente debe permitir la revisión de la evaluación dentro de los tres días hábiles siguientes a la publicación de resultados."
+  },
+  {
+    "titulo": "Cálculo del Índice Académico",
+    "descripcion": "Se calcula multiplicando la nota final de cada materia por su número de unidades crédito y dividiendo el total entre las unidades crédito cursadas."
+  },
+  {
+    "titulo": "Repetir Unidades Curriculares",
+    "descripcion": "La nueva calificación reemplaza a la anterior para el cálculo del Índice Académico Acumulado. Si se repite más de una vez, se promedian todas excepto la primera."
+  },
+  {
+    "titulo": "Pérdida de Inscripción",
+    "descripcion": "Ocurre cuando un estudiante obtiene un índice académico acumulado inferior a 3,60 o agota los tres períodos de prueba."
+  },
+  {
+    "titulo": "Reingreso luego de pérdida de Inscripción",
+    "descripcion": "Puede solicitarse después de dos años, reiniciando el cómputo del índice académico."
+  },
+  {
+    "titulo": "Sanciones",
+    "descripcion": "El fraude en evaluaciones acarrea sanciones: la primera falta implica nota mínima de 1; la segunda, cancelación definitiva de inscripción."
+  }
+]
