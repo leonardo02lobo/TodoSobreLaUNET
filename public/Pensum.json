@@ -19,14 +19,14 @@
       {
         "nombre": "Matemática Discreta",
         "unidad_credito": 3,
-        "Codigo": "0412101T",
+        "Codigo": "0834102T",
         "descripcion": "Estudio de estructuras matemáticas discretas aplicadas a la informática: conjuntos, relaciones, grafos y lógica.",
         "profesor": "Blanca Carvajal, Gandica Elizabeth, Angelica Sobral"
       },
       {
         "nombre": "Matemática I",
         "unidad_credito": 4,
-        "Codigo": "0834102T",
+        "Codigo": "0826101T",
         "descripcion": "Cálculo diferencial e integral en una variable real. Fundamentos del análisis matemático.",
         "profesor": "Blanca Gamez, leidy Diaz, Susana Pardo, Angela Torres, Keith Maldonado, Omar Ropero, Hernesto Omar"
       },
@@ -108,7 +108,7 @@
         "unidad_credito": 1,
         "codigo": "0842303L",
         "descripcion": "Experimentos de electricidad, magnetismo y ondas.",
-        "profesor": "Franklin Buitraga,"
+        "profesor": "Franklin Buitrago"
       },
       {
         "nombre": "Física II",
@@ -167,7 +167,7 @@
       {
         "nombre": "Estadística I",
         "unidad_credito": 3,
-        "codigo": "1012207T",
+        "codigo": "0834405T",
         "descripcion": "Conceptos básicos de probabilidad y estadística descriptiva.",
         "profesor": "Mayle Leal"
       },
@@ -189,6 +189,13 @@
         "codigo": "1032301T",
         "descripcion": "Reflexión sobre valores, metas personales y propósito profesional.",
         "profesor": "Dulce Hevia, Domenico Ragone"
+      },
+      {
+        "nombre": "Estadística II",
+        "unidad_credito": 3,
+        "codigo": "0834501T",
+        "descripcion": "Probabilidad y análisis estadístico de datos.",
+        "profesor": "Fernando Fernandez"
       },
       {
         "nombre": "Base de Datos I",
@@ -216,7 +223,7 @@
         "unidad_credito": 3,
         "codigo": "0834503T",
         "descripcion": "Métodos numéricos para la resolución de problemas científicos.",
-        "profesor": "Blanca guiyen, Jennifer Perez"
+        "profesor": "Blanca Guiyen, Jennifer Perez"
       },
       {
         "nombre": "Seminario de Servicio Comunitario",
@@ -284,7 +291,7 @@
         "unidad_credito": 0,
         "codigo": "1013401T",
         "descripcion": "Ejecución del proyecto de servicio comunitario para el desarrollo tecnológico y social.",
-        "profesor": "por asignar"
+        "profesor": "Rosa Guerrero, Zirlis Diaz"
       }
     ]
   },
@@ -294,43 +301,42 @@
       {
         "nombre": "Electiva I",
         "unidad_credito": 2,
-        "codigo": "1023302T",
         "descripcion": "Materia optativa según el interés del estudiante (ej. IA, redes, bioinformática).",
         "profesor": "por asignar"
       },
       {
         "nombre": "Base de Datos II",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0425705T",
         "descripcion": "Optimización, seguridad y administración de bases de datos.",
-        "profesor": "por asignar"
+        "profesor": "Jose Orlando"
       },
       {
         "nombre": "Compiladores e Intérpretes",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0435709T",
         "descripcion": "Diseño de compiladores, análisis léxico y sintáctico.",
         "profesor": "Luis Ochoa"
       },
       {
         "nombre": "Comunicaciones II",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0435708T",
         "descripcion": "Redes avanzadas, protocolos de comunicación y enrutamiento.",
         "profesor": "Hedry Fortoul"
       },
       {
         "nombre": "Investigación de Operaciones II", 
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0425701T",
         "descripcion": "Modelos avanzados de optimización y simulación.",
         "profesor": "por asignar"
       },
       {
         "nombre": "Ingeniería Economica",
         "unidad_credito": 3,
-        "codigo": "1023302T",
-        "descripcion": "Modelos avanzados de optimización y simulación.",
+        "codigo": "0134805T",
+        "descripcion": "Evaluación económica de proyectos y análisis de rentabilidad",
         "profesor": "Gonzales Delymar, Alexandra Marquez"
       }
     ]
@@ -341,42 +347,41 @@
       {
         "nombre": "Ecología y Contaminación Ambiental",
         "unidad_credito": 2,
-        "codigo": "1023302T",
+        "codigo": "1113404T",
         "descripcion": "Estudio del impacto ambiental de la tecnología y desarrollo sostenible.",
         "profesor": "Beatriz Niño, Martha Sanchez"
       },
       {
         "nombre": "Sistema de Información II",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0425801T",
         "descripcion": "Gestión y control de proyectos de sistemas de información empresariales.",
         "profesor": "Marinela Ruiz"
       },
       {
         "nombre": "Sistema Distribuidos",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0435814T",
         "descripcion": "Conceptos y diseño de sistemas distribuidos y paralelos.",
-        "profesor": "X"
+        "profesor": "Hedry Camanes Fortoul Yegues"
       },
       {
         "nombre": "Simulación de Sistemas",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0425803T",
         "descripcion": "Modelado y simulación de procesos para toma de decisiones.",
-        "profesor": "por asignar"
+        "profesor": "Feijoo Colomine"
       },
       {
         "nombre": "Electiva II",
         "unidad_credito": 2,
-        "codigo": "1023302T",
         "descripcion": "Materia optativa de libre elección.",
         "profesor": "por asignar"
       },
       {
         "nombre": "Finanzas para ingenieros",
         "unidad_credito": 2,
-        "codigo": "1023302T",
+        "codigo": "0423804T",
         "descripcion": "Materia optativa de libre elección.",
         "profesor": "Feijoio Colomine"
       }
@@ -388,42 +393,40 @@
       {
         "nombre": "Seminario ",
         "unidad_credito": 0,
-        "codigo": "1023302T",
+        "codigo": "0424902T",
         "descripcion": "Presentación y análisis de temas de interés tecnológico actual.",
-        "profesor": "Willean"
+        "profesor": "William Armando Sierra Caceres"
       },
       {
         "nombre": "Metodología de la Investigación",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "1013308T",
         "descripcion": "Diseño, ejecución y presentación de proyectos de investigación científica.",
-        "profesor": "por asignar"
+        "profesor": "Josefina Balbo, Yelitza Cardenas, Ricardo Chacon, Yovvani Ruiz, Jose Moncada, Damaris Gonzales"
       },
       {
         "nombre": "Ingeniería de Software",
         "unidad_credito": 3,
-        "codigo": "1023302T",
+        "codigo": "0425901T",
         "descripcion": "Modelos, herramientas y prácticas para el desarrollo de software.",
         "profesor": "por asignar"
       },
       {
         "nombre": "Electiva III",
         "unidad_credito": 2,
-        "codigo": "1023302T",
         "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
         "profesor": "por asignar"
       },
       {
         "nombre": "Electiva IV",
         "unidad_credito": 2,
-        "codigo": "1023302T",
         "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
         "profesor": "por asignar"
       },
       {
         "nombre": "Legislación, Valores y Proyecto País",
         "unidad_credito": 1,
-        "codigo": "1023302T",
+        "codigo": "1032601T",
         "descripcion": "Normas éticas, legales y sociales que rigen el ejercicio profesional.",
         "profesor": "Arnaldo Dyongh, Arelys Peres"
       }
@@ -435,14 +438,14 @@
       {
         "nombre": "TAP Tesis",
         "unidad_credito": 12,
-        "codigo": "1023302T",
+        "codigo": "0400001T",
         "descripcion": "Desarrollo del trabajo especial de grado con orientación investigativa.",
         "profesor": "Iveet Kool"
       },
       {
         "nombre": "TAP Pasantía",
         "unidad_credito": 12,
-        "codigo": "1023302T",
+        "codigo": "0400002T",
         "descripcion": "Práctica profesional supervisada en el área de la ingeniería informática.",
         "profesor": "Dessire Suarez"
       }
