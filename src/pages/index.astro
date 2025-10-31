@@ -2,6 +2,7 @@
 import Card from "../components/Card.astro";
 import Main from "../components/Main.astro";
 import Layout from "../layout/Layout.astro";
+import data from "./../data/Documento.json"
 ---
 
 <Layout>
@@ -12,18 +13,18 @@ import Layout from "../layout/Layout.astro";
             <font>sobre la Universidad</font>
         </span>
         <div class="grid grid-cols-3 gap-10 pl-10 pr-10">
-            <Card />
-            <Card />
-            <Card />
+            <Card title={data[0].titulo} content={data[0].descripcion}/>
+            <Card title={data[1].titulo} content={data[1].descripcion}/>
+            <Card title={data[10].titulo} content={data[10].descripcion}/>
         </div>
+        <a href="/NormasDeEstudio" class="bg-blue-950 rounded-2xl p-4 text-white">Mirar todas las normas de estudio</a>
         <div
             class="bg-white rounded-2xl p-10 flex flex-col justify-center items-center gap-4"
         >
             <span class="text-4xl font-bold flex flex-col text-center">
                 <font>Que es el Pensum</font>
             </span>
-            <a href="">Mirar nuestro pensum</a>
-            <a href="">Conocer mas sobre las materias</a>
+            <a href="/Pensum">Conocer mas sobre las materias</a>
         </div>
     </section>
 </Layout>

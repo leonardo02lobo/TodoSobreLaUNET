@@ -1,8 +1,54 @@
 ---
 import Layout from "../layout/Layout.astro";
+// import plan from "../data/plan_informatica.json";
+import { useState } from "react";
 
+// const [selectedSemestre, setSelectedSemestre] = useState(plan[0].semestre);
+// const semestreData = plan.find((s) => s.semestre === selectedSemestre);
 ---
 
 <Layout>
-    hola
+    <div class="p-6 max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-6">
+            Plan de Estudios - Ingeniería Informática
+        </h1>
+
+        <div class="flex justify-center mb-6 flex-wrap gap-3">
+            <!-- {
+                plan.map((s) => (
+                    <button
+                        class={`px-4 py-2 rounded-2xl font-semibold transition-all duration-300 ${
+                            selectedSemestre === s.semestre
+                                ? "bg-blue-600 text-white shadow-lg"
+                                : "bg-gray-200 hover:bg-blue-100"
+                        }`}
+                        onClick={() => setSelectedSemestre(s.semestre)}
+                    >
+                        {s.semestre}
+                    </button>
+                ))
+            } -->
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- {
+                semestreData.materias.map((m) => (
+                    <div class="bg-white p-5 rounded-2xl shadow-md border hover:shadow-lg transition-all duration-300">
+                        <h2 class="text-lg font-bold mb-2 text-blue-700">
+                            {m.nombre}
+                        </h2>
+                        <p class="text-sm text-gray-600 mb-2">
+                            {m.descripcion}
+                        </p>
+                        <p class="text-sm font-semibold">
+                            UC: {m.unidad_credito}
+                        </p>
+                        <p class="text-sm text-gray-500">
+                            Profesor: {m.profesor}
+                        </p>
+                    </div>
+                ))
+            } -->
+        </div>
+    </div>
 </Layout>
