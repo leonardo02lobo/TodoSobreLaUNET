@@ -32,14 +32,14 @@ import data from "./../data/Documento.json";
                 content={data[10].descripcion}
             />
         </div>
+        <a
+            href="/NormasDeEstudio"
+            class="bg-blue-950 hover:bg-blue-800 rounded-xl px-8 py-4 text-white font-semibold transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
+        >
+            Mirar todas las normas de estudio
+        </a>
 
-        <div class="flex flex-col items-center gap-8">
-            <a
-                href="/NormasDeEstudio"
-                class="bg-blue-950 hover:bg-blue-800 rounded-xl px-8 py-4 text-white font-semibold transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
-            >
-                Mirar todas las normas de estudio
-            </a>
+        <div class="flex flex-row items-center gap-8">
 
             <div
                 class="bg-line-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 text-center border border-blue-200 max-w-2xl bg-white"
@@ -56,6 +56,22 @@ import data from "./../data/Documento.json";
                     class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-300"
                 >
                     Conocer más sobre las materias
+                </a>
+            </div>
+            <div
+                class="bg-line-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 text-center border border-blue-200 max-w-2xl bg-white"
+            >
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                    Conoces acerca de los departamentos
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Descubre los departamentos académicos de las Carreras
+                </p>
+                <a
+                    href="/Departamentos"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-300"
+                >
+                    Conocer más sobre los departamentos
                 </a>
             </div>
         </div>

@@ -7,10 +7,8 @@ const PlanEstudiosAvanzado = () => {
     const [selectedMateria, setSelectedMateria] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    // Encontrar los datos del semestre seleccionado
     const semestreData = plan.find((s) => s.semestre === selectedSemestre);
 
-    // Filtrar materias basado en el término de búsqueda
     const filteredMaterias = useMemo(() => {
         if (!searchTerm.trim()) return semestreData.materias;
         
@@ -21,20 +19,17 @@ const PlanEstudiosAvanzado = () => {
         );
     }, [semestreData.materias, searchTerm]);
 
-    // Calcular total de UC del semestre
     const totalUC = useMemo(() => {
         return semestreData.materias.reduce((total, materia) => 
             total + parseInt(materia.unidad_credito), 0
         );
     }, [semestreData.materias]);
 
-    // Función para abrir el modal con la materia seleccionada
     const openModal = (materia) => {
         setSelectedMateria(materia);
         setIsModalOpen(true);
     };
 
-    // Función para cerrar el modal
     const closeModal = () => {
         setIsModalOpen(false);
         setSelectedMateria(null);
@@ -52,7 +47,6 @@ const PlanEstudiosAvanzado = () => {
                 </p>
             </div>
 
-            {/* Barra de búsqueda */}
             <div className="mb-6">
                 <input
                     type="text"
@@ -63,7 +57,6 @@ const PlanEstudiosAvanzado = () => {
                 />
             </div>
 
-            {/* Botones de semestres */}
             <div className="flex justify-center mb-8 flex-wrap gap-3">
                 {plan.map((semestre) => (
                     <button
@@ -75,7 +68,7 @@ const PlanEstudiosAvanzado = () => {
                         }`}
                         onClick={() => {
                             setSelectedSemestre(semestre.semestre);
-                            setSearchTerm(""); // Limpiar búsqueda al cambiar semestre
+                            setSearchTerm(""); 
                         }}
                     >
                         {semestre.semestre}
@@ -83,7 +76,6 @@ const PlanEstudiosAvanzado = () => {
                 ))}
             </div>
 
-            {/* Información del semestre */}
             <div className="bg-blue-50 rounded-lg p-4 mb-6 text-center">
                 <h2 className="text-xl font-semibold text-blue-800 mb-1">
                     Semestre {selectedSemestre}
@@ -98,7 +90,6 @@ const PlanEstudiosAvanzado = () => {
                 </div>
             </div>
 
-            {/* Grid de materias simplificado */}
             {filteredMaterias.length > 0 ? (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     {filteredMaterias.map((materia, index) => (
@@ -136,14 +127,12 @@ const PlanEstudiosAvanzado = () => {
                 </div>
             )}
 
-            {/* Modal */}
             {isModalOpen && selectedMateria && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                     <div 
                         className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* Header del modal */}
                         <div className="flex justify-between items-center p-6 border-b border-gray-200">
                             <h3 className="text-xl font-bold text-gray-800">
                                 Detalles de la Materia
@@ -158,7 +147,6 @@ const PlanEstudiosAvanzado = () => {
                             </button>
                         </div>
 
-                        {/* Contenido del modal */}
                         <div className="p-6">
                             <div className="bg-white p-5 rounded-2xl border border-gray-200">
                                 <div className="flex justify-between items-start mb-4">
@@ -172,6 +160,9 @@ const PlanEstudiosAvanzado = () => {
                                 
                                 <div className="mb-4">
                                     <h4 className="text-sm font-semibold text-gray-700 mb-2">Descripción:</h4>
+                                    <p className="text-sm text-gray-600 leading-relaxed font-bold">
+                                        Codigo: {selectedMateria.Codigo}
+                                    </p>
                                     <p className="text-sm text-gray-600 leading-relaxed">
                                         {selectedMateria.descripcion}
                                     </p>
@@ -185,7 +176,6 @@ const PlanEstudiosAvanzado = () => {
                             </div>
                         </div>
 
-                        {/* Footer del modal */}
                         <div className="flex justify-end p-6 border-t border-gray-200">
                             <button
                                 onClick={closeModal}

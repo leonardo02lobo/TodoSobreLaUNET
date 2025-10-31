@@ -1,0 +1,13 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layout/Layout.astro";
+import data from "./../data/Documento.json"
+---
+
+<Layout title="Normas de Estudio">
+    <div class="grid grid-cols-3 p-10 gap-4">
+    {data.map((norma) => (
+        <Card title={norma.titulo} content={norma.descripcion}/>
+    ))}
+</div>
+</Layout>
