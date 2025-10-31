@@ -1,30 +1,66 @@
 ---
 import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+import HelloWorldCup from "../components/HelloWorldCup.astro";
 import Main from "../components/Main.astro";
 import Layout from "../layout/Layout.astro";
-import data from "./../data/Documento.json"
+import data from "./../data/Documento.json";
 ---
 
 <Layout>
     <Main />
-    <section class="flex flex-col justify-center items-center gap-12">
-        <span class="text-4xl font-bold flex flex-col text-center">
-            <font>Que necesitas conocer</font>
-            <font>sobre la Universidad</font>
-        </span>
-        <div class="grid grid-cols-3 gap-10 pl-10 pr-10">
-            <Card title={data[0].titulo} content={data[0].descripcion}/>
-            <Card title={data[1].titulo} content={data[1].descripcion}/>
-            <Card title={data[10].titulo} content={data[10].descripcion}/>
+    <section
+        class="flex flex-col justify-center items-center gap-12 py-16 px-4"
+    >
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-3">
+                Qué necesitas conocer sobre la Universidad
+            </h1>
         </div>
-        <a href="/NormasDeEstudio" class="bg-blue-950 rounded-2xl p-4 text-white">Mirar todas las normas de estudio</a>
-        <div
-            class="bg-white rounded-2xl p-10 flex flex-col justify-center items-center gap-4"
-        >
-            <span class="text-4xl font-bold flex flex-col text-center">
-                <font>Que es el Pensum</font>
-            </span>
-            <a href="/Pensum">Conocer mas sobre las materias</a>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+            <Card
+                title={data[0].titulo}
+                content={data[0].descripcion}
+            />
+            <Card
+                title={data[1].titulo}
+                content={data[1].descripcion}
+            />
+            <Card
+                title={data[10].titulo}
+                content={data[10].descripcion}
+            />
+        </div>
+
+        <div class="flex flex-col items-center gap-8">
+            <a
+                href="/NormasDeEstudio"
+                class="bg-blue-950 hover:bg-blue-800 rounded-xl px-8 py-4 text-white font-semibold transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
+            >
+                Mirar todas las normas de estudio
+            </a>
+
+            <div
+                class="bg-line-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 text-center border border-blue-200 max-w-2xl bg-white"
+            >
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                    ¿Qué es el Pensum?
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Descubre el plan completo de materias y tu trayectoria
+                    académica
+                </p>
+                <a
+                    href="/Pensum"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-300"
+                >
+                    Conocer más sobre las materias
+                </a>
+            </div>
         </div>
     </section>
+
+    <HelloWorldCup />
+    <Footer />
 </Layout>
