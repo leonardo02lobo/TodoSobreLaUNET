@@ -1,0 +1,451 @@
+[
+  {
+    "semestre": "I",
+    "materias": [
+      {
+        "nombre": "Introducción a la Ingeniería Informática",
+        "unidad_credito": 1,
+        "Codigo": "0412101T",
+        "descripcion": "Introducción a la ingeniería informática, su historia, aplicaciones y áreas de desarrollo profesional.",
+        "profesor": "Diserre Suarez, Iveet Kool"
+      },
+      {
+        "nombre": "Computación I",
+        "unidad_credito": 3,
+        "Codigo": "0415102T",
+        "descripcion": "Conceptos básicos de computación, hardware, software y lógica algorítmica.",
+        "profesor": "Diserre Suarez, Nixon Paticho, Omar Fernandez, Armando Carrero, Jose Fernandez"
+      },
+      {
+        "nombre": "Matemática Discreta",
+        "unidad_credito": 3,
+        "Codigo": "0412101T",
+        "descripcion": "Estudio de estructuras matemáticas discretas aplicadas a la informática: conjuntos, relaciones, grafos y lógica.",
+        "profesor": "Blanca Carvajal, Gandica Elizabeth, Angelica Sobral"
+      },
+      {
+        "nombre": "Matemática I",
+        "unidad_credito": 4,
+        "Codigo": "0834102T",
+        "descripcion": "Cálculo diferencial e integral en una variable real. Fundamentos del análisis matemático.",
+        "profesor": "Blanca Gamez, leidy Diaz, Susana Pardo, Angela Torres, Keith Maldonado, Omar Ropero, Hernesto Omar"
+      },
+      {
+        "nombre": "Efectividad Personal",
+        "unidad_credito": 1,
+        "Codigo": "1032109T",
+        "descripcion": "Desarrollo de habilidades blandas, comunicación, liderazgo y gestión del tiempo.",
+        "profesor": "Jose Molina, Dulce Hevia, Hayle Contreras, Domenico Anibal, Patricia Roa"
+      },
+      {
+        "nombre": "Lenguaje y Comunicación",
+        "unidad_credito": 2,
+        "Codigo": "1023111T",
+        "descripcion": "Expresión oral y escrita para contextos académicos y técnicos.",
+        "profesor": "Maivy Maldonado, Cristhian Camacho, Freddy Ruiz,  Jesus Lara"
+      }
+    ]
+  },
+  {
+    "semestre": "II",
+    "materias": [
+      {
+        "nombre": "Química General I",
+        "unidad_credito": 3,
+        "codigo": "0914201T",
+        "descripcion": "Conceptos básicos de química general y su relación con la ingeniería.",
+        "profesor": "Emildo, Ruth Alvaez, America, Angelica Arias"
+      },
+      {
+        "nombre": "Programación I",
+        "unidad_credito": 4,
+        "codigo": "0416202T",
+        "descripcion": "Fundamentos de la programación estructurada y resolución de problemas computacionales.",
+        "profesor": "Desirre Suarez"
+      },
+      {
+        "nombre": "Laboratorio de Física I",
+        "unidad_credito": 1,
+        "codigo": "0842204L",
+        "descripcion": "Prácticas de laboratorio orientadas a la comprensión de fenómenos físicos básicos.",
+        "profesor": "Franklin Buitrago, Dionel Perez"
+      },
+      {
+        "nombre": "Física I",
+        "unidad_credito": 4,
+        "codigo": "0415103T",
+        "descripcion": "Mecánica clásica, cinemática y dinámica de partículas.",
+        "profesor": "Yasmira Porra, Mary Roa, Betsy Hernandez, Jose Labrador, Olga Moreno, Dionel Perez"
+      },
+      {
+        "nombre": "Matemática II",
+        "unidad_credito": 4,
+        "codigo": "0826201T",
+        "descripcion": "Cálculo integral y aplicaciones, introducción a ecuaciones diferenciales.",
+        "profesor": "Yelitza Cardenas, Leidy Diaz, Susana Pardo, Omar Ropero,Tania"
+      }
+    ]
+  },
+  {
+    "semestre": "III",
+    "materias": [
+      {
+        "nombre": "Teoría General de Sistemas",
+        "unidad_credito": 2,
+        "codigo": "0423305T",
+        "descripcion": "Análisis de sistemas y su aplicación a la ingeniería informática.",
+        "profesor": "Geraldin Cardenas"
+      },
+      {
+        "nombre": "Estructura de Datos",
+        "unidad_credito": 4,
+        "codigo": "0416304T",
+        "descripcion": "Diseño e implementación de estructuras de datos fundamentales.",
+        "profesor": "Vannesa Paolini"
+      },
+      {
+        "nombre": "Laboratorio de Física II",
+        "unidad_credito": 1,
+        "codigo": "0842303L",
+        "descripcion": "Experimentos de electricidad, magnetismo y ondas.",
+        "profesor": "Franklin Buitraga,"
+      },
+      {
+        "nombre": "Física II",
+        "unidad_credito": 4,
+        "codigo": "0846302T",
+        "descripcion": "Estudio de la electricidad, magnetismo y óptica.",
+        "profesor": "Francisco Fernandez,Alexander Aldana, Dionel Perez, Gilberto Paredes, Irenia Mendoza"
+      },
+      {
+        "nombre": "Matemática III",
+        "unidad_credito": 4,
+        "codigo": "0826301T",
+        "descripcion": "Ecuaciones diferenciales y series numéricas.",
+        "profesor": "Gerzon Barazarte, Tania Peña, Arelis Diaz, Jorge Lopez"
+      },
+      {
+        "nombre": "Inglés I",
+        "unidad_credito": 2,
+        "codigo": "1023202T",
+        "descripcion": "Comprensión lectora y vocabulario técnico básico en inglés.",
+        "profesor": "Carolina Rojas, Yoleida Gamez, Isaura Carmen, Enlinar Parra, Belkys Moncada"
+      }
+    ]
+  },
+  {
+    "semestre": "IV",
+    "materias": [
+      {
+        "nombre": "Ciencia y Sociedad I",
+        "unidad_credito": 1,
+        "codigo": "1012207T",
+        "descripcion": "Relación entre ciencia, tecnología y sociedad moderna.",
+        "profesor": "Jose Becerra, Nusvia Zambrano"
+      },
+      {
+        "nombre": "Programación II",
+        "unidad_credito": 4,
+        "codigo": "0415405T",
+        "descripcion": "Programación orientada a objetos y estructuras avanzadas.",
+        "profesor": "Desirre Suarez"
+      },
+      {
+        "nombre": "Fundamentos de Lógica Digital",
+        "unidad_credito": 3,
+        "codigo": "0435406T",
+        "descripcion": "Diseño y análisis de circuitos digitales y sistemas lógicos.",
+        "profesor": "Leandro Apacle, Pablo Hernandez"
+      },
+      {
+        "nombre": "Matemática IV",
+        "unidad_credito": 4,
+        "codigo": "0826401T",
+        "descripcion": "Cálculo multivariable y transformadas aplicadas.",
+        "profesor": "Edwin Velazquez, Maria Tarazona, Gerson Bararzarte"
+      },
+      {
+        "nombre": "Estadística I",
+        "unidad_credito": 3,
+        "codigo": "1012207T",
+        "descripcion": "Conceptos básicos de probabilidad y estadística descriptiva.",
+        "profesor": "Mayle Leal"
+      },
+      {
+        "nombre": "Inglés II",
+        "unidad_credito": 2,
+        "codigo": "1023302T",
+        "descripcion": "Inglés técnico intermedio enfocado en textos informáticos.",
+        "profesor": "Carolina Rojas, Nancy Ruiz, Enlinar Alviarez"
+      }
+    ]
+  },
+  {
+    "semestre": "V",
+    "materias": [
+      {
+        "nombre": "Necesidades, Valores y Proyecto de Vida",
+        "unidad_credito": 1,
+        "codigo": "1032301T",
+        "descripcion": "Reflexión sobre valores, metas personales y propósito profesional.",
+        "profesor": "Dulce Hevia, Domenico Ragone"
+      },
+      {
+        "nombre": "Base de Datos I",
+        "unidad_credito": 3,
+        "codigo": "0425501T",
+        "descripcion": "Modelado de datos, diseño lógico y físico de bases de datos relacionales.",
+        "profesor": "Silverio Bonilla"
+      },
+      {
+        "nombre": "Organización del Computador",
+        "unidad_credito": 4,
+        "codigo": "0436505T",
+        "descripcion": "Arquitectura interna de los computadores y funcionamiento del hardware.",
+        "profesor": "Edgar Vazquez"
+      },
+      {
+        "nombre": "Automatización",
+        "unidad_credito": 4,
+        "codigo": "0236509T",
+        "descripcion": "Principios de control automático y sistemas mecatrónicos.",
+        "profesor": "X"
+      },
+      {
+        "nombre": "Metodos Numérico",
+        "unidad_credito": 3,
+        "codigo": "0834503T",
+        "descripcion": "Métodos numéricos para la resolución de problemas científicos.",
+        "profesor": "Blanca guiyen, Jennifer Perez"
+      },
+      {
+        "nombre": "Seminario de Servicio Comunitario",
+        "unidad_credito": 0,
+        "codigo": "1000001T",
+        "descripcion": "Presentación y análisis de temas de interés tecnológico actual.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Proyecto de Servicio Comunitario",
+        "unidad_credito": 0,
+        "codigo": "1000002T",
+        "descripcion": "Diseño del proyecto de servicio comunitario aplicando conocimientos informáticos para el beneficio social.",
+        "profesor": "por asignar"
+      }
+    ]
+  },
+  {
+    "semestre": "VI",
+    "materias": [
+      {
+        "nombre": "Multimedia",
+        "unidad_credito": 3,
+        "codigo": "0424604T",
+        "descripcion": "Diseño y desarrollo de aplicaciones multimedia interactivas.",
+        "profesor": "Udiffer"
+      },
+      {
+        "nombre": "Sistema de Información I",
+        "unidad_credito": 3,
+        "codigo": "0425601T",
+        "descripcion": "Diseño, implementación y administración de sistemas de información.",
+        "profesor": "Iveet Karol, Arlenys Valera"
+      },
+      {
+        "nombre": "Sistemas Operativos",
+        "unidad_credito": 3,
+        "codigo": "0435607T",
+        "descripcion": "Conceptos, estructura y gestión de sistemas operativos modernos.",
+        "profesor": "Miguel Useche"
+      },
+      {
+        "nombre": "Comunicaciones I",
+        "unidad_credito": 3,
+        "codigo": "0435606T",
+        "descripcion": "Fundamentos de telecomunicaciones y redes de datos.",
+        "profesor": "Hedry Fortoul"
+      },
+      {
+        "nombre": "Investigación de Operaciones I",
+        "unidad_credito": 4,
+        "codigo": "0135701T",
+        "descripcion": "Modelos matemáticos para la toma de decisiones.",
+        "profesor": "Mariela Borges"
+      },
+      {
+        "nombre": "Servicio Comunitario",
+        "unidad_credito": 0,
+        "codigo": "1000003T",
+        "descripcion": "Ejecución del proyecto de servicio comunitario para el desarrollo tecnológico y social.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Economia",
+        "unidad_credito": 0,
+        "codigo": "1013401T",
+        "descripcion": "Ejecución del proyecto de servicio comunitario para el desarrollo tecnológico y social.",
+        "profesor": "por asignar"
+      }
+    ]
+  },
+  {
+    "semestre": "VII",
+    "materias": [
+      {
+        "nombre": "Electiva I",
+        "unidad_credito": 2,
+        "codigo": "1023302T",
+        "descripcion": "Materia optativa según el interés del estudiante (ej. IA, redes, bioinformática).",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Base de Datos II",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Optimización, seguridad y administración de bases de datos.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Compiladores e Intérpretes",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Diseño de compiladores, análisis léxico y sintáctico.",
+        "profesor": "Luis Ochoa"
+      },
+      {
+        "nombre": "Comunicaciones II",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Redes avanzadas, protocolos de comunicación y enrutamiento.",
+        "profesor": "Hedry Fortoul"
+      },
+      {
+        "nombre": "Investigación de Operaciones II", 
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Modelos avanzados de optimización y simulación.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Ingeniería Economica",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Modelos avanzados de optimización y simulación.",
+        "profesor": "Gonzales Delymar, Alexandra Marquez"
+      }
+    ]
+  },
+  {
+    "semestre": "VIII",
+    "materias": [
+      {
+        "nombre": "Ecología y Contaminación Ambiental",
+        "unidad_credito": 2,
+        "codigo": "1023302T",
+        "descripcion": "Estudio del impacto ambiental de la tecnología y desarrollo sostenible.",
+        "profesor": "Beatriz Niño, Martha Sanchez"
+      },
+      {
+        "nombre": "Sistema de Información II",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Gestión y control de proyectos de sistemas de información empresariales.",
+        "profesor": "Marinela Ruiz"
+      },
+      {
+        "nombre": "Sistema Distribuidos",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Conceptos y diseño de sistemas distribuidos y paralelos.",
+        "profesor": "X"
+      },
+      {
+        "nombre": "Simulación de Sistemas",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Modelado y simulación de procesos para toma de decisiones.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Electiva II",
+        "unidad_credito": 2,
+        "codigo": "1023302T",
+        "descripcion": "Materia optativa de libre elección.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Finanzas para ingenieros",
+        "unidad_credito": 2,
+        "codigo": "1023302T",
+        "descripcion": "Materia optativa de libre elección.",
+        "profesor": "Feijoio Colomine"
+      }
+    ]
+  },
+  {
+    "semestre": "IX",
+    "materias": [
+      {
+        "nombre": "Seminario ",
+        "unidad_credito": 0,
+        "codigo": "1023302T",
+        "descripcion": "Presentación y análisis de temas de interés tecnológico actual.",
+        "profesor": "Willean"
+      },
+      {
+        "nombre": "Metodología de la Investigación",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Diseño, ejecución y presentación de proyectos de investigación científica.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Ingeniería de Software",
+        "unidad_credito": 3,
+        "codigo": "1023302T",
+        "descripcion": "Modelos, herramientas y prácticas para el desarrollo de software.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Electiva III",
+        "unidad_credito": 2,
+        "codigo": "1023302T",
+        "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Electiva IV",
+        "unidad_credito": 2,
+        "codigo": "1023302T",
+        "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
+        "profesor": "por asignar"
+      },
+      {
+        "nombre": "Legislación, Valores y Proyecto País",
+        "unidad_credito": 1,
+        "codigo": "1023302T",
+        "descripcion": "Normas éticas, legales y sociales que rigen el ejercicio profesional.",
+        "profesor": "Arnaldo Dyongh, Arelys Peres"
+      }
+    ]
+  },
+  {
+    "semestre": "X",
+    "materias": [
+      {
+        "nombre": "TAP Tesis",
+        "unidad_credito": 12,
+        "codigo": "1023302T",
+        "descripcion": "Desarrollo del trabajo especial de grado con orientación investigativa.",
+        "profesor": "Iveet Kool"
+      },
+      {
+        "nombre": "TAP Pasantía",
+        "unidad_credito": 12,
+        "codigo": "1023302T",
+        "descripcion": "Práctica profesional supervisada en el área de la ingeniería informática.",
+        "profesor": "Dessire Suarez"
+      }
+    ]
+  }
+]
