@@ -1,8 +1,10 @@
 ---
 import Layout from "../layout/Layout.astro";
-
+import PlanEstudios from "../components/PlanEstudios.jsx";
+// O importa la versión avanzada:
+// import PlanEstudios from "../components/PlanEstudiosAvanzado.jsx";
 ---
 
 <Layout>
-    hola
+    <PlanEstudios client:load />
 </Layout>

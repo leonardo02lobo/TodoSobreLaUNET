@@ -12,10 +12,6 @@
     "descripcion": "Es cada uno de los elementos académicos componentes del plan de estudio de una carrera determinada, mediante los cuales se definen los aprendizajes y competencias requeridas."
   },
   {
-    "titulo": "Dispersión permitida para la inscripción de Unidades Curriculares",
-    "descripcion": "La máxima dispersión permitida a un estudiante será uno superior y otro inferior al semestre donde se encuentre el mayor número de unidades curriculares inscritas, respetando las prelaciones exigidas. En todo caso, el estudiante deberá inscribir las unidades curriculares correspondientes al semestre más bajo por culminar."
-  },
-  {
     "titulo": "Estudiante Regular",
     "descripcion": "Es el estudiante inscrito para cursar el primer semestre o aquel que obtenga un Índice Académico Acumulado igual o superior a 5,10."
   },
@@ -102,5 +98,9 @@
   {
     "titulo": "Sanciones",
     "descripcion": "El fraude en evaluaciones acarrea sanciones: la primera falta implica nota mínima de 1; la segunda, cancelación definitiva de inscripción."
+  },
+  {
+    "titulo": "Dispersión permitida para la inscripción de Unidades Curriculares",
+    "descripcion": "La máxima dispersión permitida a un estudiante será uno superior y otro inferior al semestre donde se encuentre el mayor número de unidades curriculares inscritas, respetando las prelaciones exigidas. En todo caso, el estudiante deberá inscribir las unidades curriculares correspondientes al semestre más bajo por culminar."
   }
 ]
