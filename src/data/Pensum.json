@@ -3,13 +3,6 @@
     "semestre": "I",
     "materias": [
       {
-        "nombre": "Introducción a la Ingeniería Informática",
-        "unidad_credito": 1,
-        "Codigo": "0412101T",
-        "descripcion": "Introducción a la ingeniería informática, su historia, aplicaciones y áreas de desarrollo profesional.",
-        "profesor": "Diserre Suarez, Iveet Kool"
-      },
-      {
         "nombre": "Computación I",
         "unidad_credito": 3,
         "Codigo": "0415102T",
@@ -43,6 +36,13 @@
         "Codigo": "1023111T",
         "descripcion": "Expresión oral y escrita para contextos académicos y técnicos.",
         "profesor": "Maivy Maldonado, Cristhian Camacho, Freddy Ruiz,  Jesus Lara"
+      },
+      {
+        "nombre": "Introducción a la Ingeniería Informática",
+        "unidad_credito": 1,
+        "Codigo": "0412101T",
+        "descripcion": "Introducción a la ingeniería informática, su historia, aplicaciones y áreas de desarrollo profesional.",
+        "profesor": "Diserre Suarez, Iveet Kool"
       }
     ]
   },
@@ -151,13 +151,6 @@
         "profesor": "Desirre Suarez"
       },
       {
-        "nombre": "Fundamentos de Lógica Digital",
-        "unidad_credito": 3,
-        "codigo": "0435406T",
-        "descripcion": "Diseño y análisis de circuitos digitales y sistemas lógicos.",
-        "profesor": "Leandro Apacle, Pablo Hernandez"
-      },
-      {
         "nombre": "Matemática IV",
         "unidad_credito": 4,
         "codigo": "0826401T",
@@ -177,6 +170,13 @@
         "codigo": "1023302T",
         "descripcion": "Inglés técnico intermedio enfocado en textos informáticos.",
         "profesor": "Carolina Rojas, Nancy Ruiz, Enlinar Alviarez"
+      },
+      {
+        "nombre": "Fundamentos de Lógica Digital",
+        "unidad_credito": 3,
+        "codigo": "0435406T",
+        "descripcion": "Diseño y análisis de circuitos digitales y sistemas lógicos.",
+        "profesor": "Leandro Apacle, Pablo Hernandez"
       }
     ]
   },
@@ -184,11 +184,11 @@
     "semestre": "V",
     "materias": [
       {
-        "nombre": "Necesidades, Valores y Proyecto de Vida",
-        "unidad_credito": 1,
-        "codigo": "1032301T",
-        "descripcion": "Reflexión sobre valores, metas personales y propósito profesional.",
-        "profesor": "Dulce Hevia, Domenico Ragone"
+        "nombre": "Metodos Numérico",
+        "unidad_credito": 3,
+        "codigo": "0834503T",
+        "descripcion": "Métodos numéricos para la resolución de problemas científicos.",
+        "profesor": "Blanca Guiyen, Jennifer Perez"
       },
       {
         "nombre": "Estadística II",
@@ -205,13 +205,6 @@
         "profesor": "Silverio Bonilla"
       },
       {
-        "nombre": "Organización del Computador",
-        "unidad_credito": 4,
-        "codigo": "0436505T",
-        "descripcion": "Arquitectura interna de los computadores y funcionamiento del hardware.",
-        "profesor": "Edgar Vazquez"
-      },
-      {
         "nombre": "Automatización",
         "unidad_credito": 4,
         "codigo": "0236509T",
@@ -219,11 +212,18 @@
         "profesor": "X"
       },
       {
-        "nombre": "Metodos Numérico",
-        "unidad_credito": 3,
-        "codigo": "0834503T",
-        "descripcion": "Métodos numéricos para la resolución de problemas científicos.",
-        "profesor": "Blanca Guiyen, Jennifer Perez"
+        "nombre": "Organización del Computador",
+        "unidad_credito": 4,
+        "codigo": "0436505T",
+        "descripcion": "Arquitectura interna de los computadores y funcionamiento del hardware.",
+        "profesor": "Edgar Vazquez"
+      },
+      {
+        "nombre": "Necesidades, Valores y Proyecto de Vida",
+        "unidad_credito": 1,
+        "codigo": "1032301T",
+        "descripcion": "Reflexión sobre valores, metas personales y propósito profesional.",
+        "profesor": "Dulce Hevia, Domenico Ragone"
       },
       {
         "nombre": "Seminario de Servicio Comunitario",
@@ -273,13 +273,6 @@
         "profesor": "Hedry Fortoul"
       },
       {
-        "nombre": "Investigación de Operaciones I",
-        "unidad_credito": 4,
-        "codigo": "0135701T",
-        "descripcion": "Modelos matemáticos para la toma de decisiones.",
-        "profesor": "Mariela Borges"
-      },
-      {
         "nombre": "Servicio Comunitario",
         "unidad_credito": 0,
         "codigo": "1000003T",
@@ -292,6 +285,13 @@
         "codigo": "1013401T",
         "descripcion": "Ejecución del proyecto de servicio comunitario para el desarrollo tecnológico y social.",
         "profesor": "Rosa Guerrero, Zirlis Diaz"
+      },
+      {
+        "nombre": "Investigación de Operaciones I",
+        "unidad_credito": 4,
+        "codigo": "0135701T",
+        "descripcion": "Modelos matemáticos para la toma de decisiones.",
+        "profesor": "Mariela Borges"
       }
     ]
   },
@@ -326,31 +326,24 @@
         "profesor": "Hedry Fortoul"
       },
       {
-        "nombre": "Investigación de Operaciones II", 
-        "unidad_credito": 3,
-        "codigo": "0425701T",
-        "descripcion": "Modelos avanzados de optimización y simulación.",
-        "profesor": "por asignar"
-      },
-      {
         "nombre": "Ingeniería Economica",
         "unidad_credito": 3,
         "codigo": "0134805T",
         "descripcion": "Evaluación económica de proyectos y análisis de rentabilidad",
         "profesor": "Gonzales Delymar, Alexandra Marquez"
+      },
+      {
+        "nombre": "Investigación de Operaciones II",
+        "unidad_credito": 3,
+        "codigo": "0425701T",
+        "descripcion": "Modelos avanzados de optimización y simulación.",
+        "profesor": "por asignar"
       }
     ]
   },
   {
     "semestre": "VIII",
     "materias": [
-      {
-        "nombre": "Ecología y Contaminación Ambiental",
-        "unidad_credito": 2,
-        "codigo": "1113404T",
-        "descripcion": "Estudio del impacto ambiental de la tecnología y desarrollo sostenible.",
-        "profesor": "Beatriz Niño, Martha Sanchez"
-      },
       {
         "nombre": "Sistema de Información II",
         "unidad_credito": 3,
@@ -384,6 +377,13 @@
         "codigo": "0423804T",
         "descripcion": "Materia optativa de libre elección.",
         "profesor": "Feijoio Colomine"
+      },
+      {
+        "nombre": "Ecología y Contaminación Ambiental",
+        "unidad_credito": 2,
+        "codigo": "1113404T",
+        "descripcion": "Estudio del impacto ambiental de la tecnología y desarrollo sostenible.",
+        "profesor": "Beatriz Niño, Martha Sanchez"
       }
     ]
   },
@@ -398,11 +398,10 @@
         "profesor": "William Armando Sierra Caceres"
       },
       {
-        "nombre": "Metodología de la Investigación",
-        "unidad_credito": 3,
-        "codigo": "1013308T",
-        "descripcion": "Diseño, ejecución y presentación de proyectos de investigación científica.",
-        "profesor": "Josefina Balbo, Yelitza Cardenas, Ricardo Chacon, Yovvani Ruiz, Jose Moncada, Damaris Gonzales"
+        "nombre": "Electiva IV",
+        "unidad_credito": 2,
+        "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
+        "profesor": "por asignar"
       },
       {
         "nombre": "Ingeniería de Software",
@@ -418,10 +417,11 @@
         "profesor": "por asignar"
       },
       {
-        "nombre": "Electiva IV",
-        "unidad_credito": 2,
-        "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
-        "profesor": "por asignar"
+        "nombre": "Metodología de la Investigación",
+        "unidad_credito": 3,
+        "codigo": "1013308T",
+        "descripcion": "Diseño, ejecución y presentación de proyectos de investigación científica.",
+        "profesor": "Josefina Balbo, Yelitza Cardenas, Ricardo Chacon, Yovvani Ruiz, Jose Moncada, Damaris Gonzales"
       },
       {
         "nombre": "Legislación, Valores y Proyecto País",
