@@ -1,7 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Header from "../components/Header.jsx";
 import "../styles/global.css";
 
 interface LayoutProps {
@@ -25,7 +25,7 @@ const { title } = Astro.props as LayoutProps;
 		</style>
 	</head>
 	<body class="bg-gray-200">
-		<Header />
+		<Header  client:load/>
 		<slot />
 		<Footer />
 	</body>

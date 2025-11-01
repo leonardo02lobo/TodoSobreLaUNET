@@ -1,12 +1,11 @@
 ---
-import Card from "../components/Card.astro"
+import Card from "../components/Card"
 import Layout from "../layout/Layout.astro"
 import data from "./../data/Documento.json"
 ---
 
 <Layout title="Normas de Estudio">
     <section class="bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden min-h-screen">
-        <!-- Efectos de fondo sutiles -->
         <div class="absolute inset-0 opacity-3">
             <div class="absolute top-0 left-0 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
             <div class="absolute top-0 right-0 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
@@ -14,7 +13,6 @@ import data from "./../data/Documento.json"
         </div>
 
         <div class="relative max-w-7xl mx-auto">
-            <!-- Header de la página -->
             <div class="text-center mb-12">
                 <div class="inline-block">
                     <div class="mb-4">
@@ -36,32 +34,6 @@ import data from "./../data/Documento.json"
                 </div>
             </div>
 
-            <!-- Filtros y búsqueda -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-8">
-                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
-                    <div class="flex-1 w-full">
-                        <input 
-                            type="text" 
-                            placeholder="Buscar normas..." 
-                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
-                            id="searchInput"
-                        />
-                    </div>
-                    <div class="flex gap-2 flex-wrap justify-center">
-                        <button class="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors duration-300 font-medium filter-active">
-                            Todas
-                        </button>
-                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors duration-300 font-medium filter-btn">
-                            Académicas
-                        </button>
-                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors duration-300 font-medium filter-btn">
-                            Administrativas
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contador de normas -->
             <div class="text-center mb-8">
                 <div class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100">
                     <span class="text-gray-600">Mostrando</span>
@@ -70,7 +42,6 @@ import data from "./../data/Documento.json"
                 </div>
             </div>
 
-            <!-- Grid de Cards Responsive -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="cardsContainer">
                 {data.map((norma, index) => (
                     <div class="norma-card" data-category="todas">
@@ -81,12 +52,12 @@ import data from "./../data/Documento.json"
                             dias=""
                             correo=""
                             jefe_departamento=""
+                            client:load
                         />
                     </div>
                 ))}
             </div>
 
-            <!-- Mensaje cuando no hay resultados -->
             <div id="noResults" class="hidden text-center py-12">
                 <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md mx-auto">
                     <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -128,7 +99,6 @@ import data from "./../data/Documento.json"
     </style>
 
     <script type="text/javascript">
-        // Funcionalidad de búsqueda y filtros
         document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('searchInput');
             const filterButtons = document.querySelectorAll('.filter-btn');
@@ -137,7 +107,6 @@ import data from "./../data/Documento.json"
             const normCount = document.getElementById('normCount');
             const noResults = document.getElementById('noResults');
 
-            // Función para filtrar normas
             function filterNormas() {
                 const searchTerm = searchInput.value.toLowerCase();
                 let visibleCount = 0;
@@ -155,10 +124,8 @@ import data from "./../data/Documento.json"
                     }
                 });
 
-                // Actualizar contador
                 normCount.textContent = visibleCount;
 
-                // Mostrar mensaje si no hay resultados
                 if (visibleCount === 0) {
                     noResults.classList.remove('hidden');
                 } else {
@@ -166,25 +133,19 @@ import data from "./../data/Documento.json"
                 }
             }
 
-            // Event listeners
             searchInput.addEventListener('input', filterNormas);
 
-            // Filtros por categoría (ejemplo básico)
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
-                    // Remover clase activa de todos los botones
                     filterButtons.forEach(btn => btn.classList.remove('filter-active'));
                     allFilterButton.classList.remove('filter-active');
                     
-                    // Agregar clase activa al botón clickeado
                     this.classList.add('filter-active');
                     
-                    // Aquí puedes agregar lógica de filtrado por categoría
                     filterNormas();
                 });
             });
 
-            // Botón "Todas"
             allFilterButton.addEventListener('click', function() {
                 filterButtons.forEach(btn => btn.classList.remove('filter-active'));
                 this.classList.add('filter-active');
@@ -192,7 +153,6 @@ import data from "./../data/Documento.json"
                 filterNormas();
             });
 
-            // Inicializar contador
             normCount.textContent = normaCards.length;
         });
     </script>
