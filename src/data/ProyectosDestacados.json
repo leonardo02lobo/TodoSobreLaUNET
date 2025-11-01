@@ -1,0 +1,37 @@
+[
+  {
+    "Tecnologia": "Java",
+    "Materia": "Programación Orientada a Objetos",
+    "Nombre": "Simulación del Canal de Panamá",
+    "Descripcion": "Aplicación que gestiona el paso de barcos por el Canal de Panamá, calculando tarifas, controlando entradas y salidas, y mostrando estadísticas de tráfico marítimo mediante programación orientada a objetos.",
+    "Imagen": "https://example.com/img/canal_panama.jpg"
+  },
+  {
+    "Tecnologia": "Python y Tkinter",
+    "Materia": "Programación II",
+    "Nombre": "Sistema Glífico de Aethelgard",
+    "Descripcion": "Programa que convierte números decimales en un sistema numérico ficticio llamado Aethelgard. Utiliza una interfaz gráfica creada con Tkinter Custom y aplica lógica de conversión recursiva.",
+    "Imagen": "https://example.com/img/aethelgard.jpg"
+  },
+  {
+    "Tecnologia": "C++",
+    "Materia": "Estructuras de Datos",
+    "Nombre": "Árbol AVL Interactivo",
+    "Descripcion": "Proyecto que permite visualizar la inserción, eliminación y balanceo automático de nodos en un árbol AVL. Ideal para entender el funcionamiento de árboles balanceados en tiempo real.",
+    "Imagen": "https://example.com/img/arbol_avl.jpg"
+  },
+  {
+    "Tecnologia": "React y TailwindCSS",
+    "Materia": "Desarrollo Web",
+    "Nombre": "Plataforma de Portafolio Académico",
+    "Descripcion": "Sitio web dinámico para mostrar proyectos universitarios, integrando un sistema de filtrado por tecnología y materia, con diseño responsive y moderno.",
+    "Imagen": "https://example.com/img/portafolio_web.jpg"
+  },
+  {
+    "Tecnologia": "JavaScript y Node.js",
+    "Materia": "Programación Web Avanzada",
+    "Nombre": "SpeedCar – Sistema de Traslados",
+    "Descripcion": "Aplicación que gestiona servicios de transporte urbano, con registro de usuarios, vehículos y rutas. Incluye generación de estadísticas y simulación diaria de operaciones.",
+    "Imagen": "https://example.com/img/speedcar.jpg"
+  }
+]
