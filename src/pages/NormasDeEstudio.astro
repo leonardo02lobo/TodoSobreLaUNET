@@ -5,9 +5,195 @@ import data from "./../data/Documento.json"
 ---
 
 <Layout title="Normas de Estudio">
-    <div class="grid grid-cols-3 p-10 gap-4">
-    {data.map((norma) => (
-        <Card title={norma.titulo} content={norma.descripcion}/>
-    ))}
-</div>
+    <section class="bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden min-h-screen">
+        <!-- Efectos de fondo sutiles -->
+        <div class="absolute inset-0 opacity-3">
+            <div class="absolute top-0 left-0 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
+            <div class="absolute top-0 right-0 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
+            <div class="absolute bottom-0 left-1/2 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto">
+            <!-- Header de la página -->
+            <div class="text-center mb-12">
+                <div class="inline-block">
+                    <div class="mb-4">
+                        <div class="w-20 h-20 bg-linear-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                        Normas de <br>
+                        <span class="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                            Estudio UNET
+                        </span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Conoce todas las regulaciones y normativas académicas de la Universidad Nacional Experimental del Táchira
+                    </p>
+                </div>
+            </div>
+
+            <!-- Filtros y búsqueda -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-8">
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                    <div class="flex-1 w-full">
+                        <input 
+                            type="text" 
+                            placeholder="Buscar normas..." 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                            id="searchInput"
+                        />
+                    </div>
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <button class="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors duration-300 font-medium filter-active">
+                            Todas
+                        </button>
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors duration-300 font-medium filter-btn">
+                            Académicas
+                        </button>
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors duration-300 font-medium filter-btn">
+                            Administrativas
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contador de normas -->
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100">
+                    <span class="text-gray-600">Mostrando</span>
+                    <span class="text-indigo-600 font-bold text-lg" id="normCount">{data.length}</span>
+                    <span class="text-gray-600">normas de estudio</span>
+                </div>
+            </div>
+
+            <!-- Grid de Cards Responsive -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="cardsContainer">
+                {data.map((norma, index) => (
+                    <div class="norma-card" data-category="todas">
+                        <Card 
+                            title={norma.titulo} 
+                            content={norma.descripcion} 
+                            hora=""
+                            dias=""
+                            correo=""
+                            jefe_departamento=""
+                        />
+                    </div>
+                ))}
+            </div>
+
+            <!-- Mensaje cuando no hay resultados -->
+            <div id="noResults" class="hidden text-center py-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md mx-auto">
+                    <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">No se encontraron normas</h3>
+                    <p class="text-gray-600">Intenta con otros términos de búsqueda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 6s ease-in-out infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+        .filter-active {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
+            color: white !important;
+        }
+        .norma-card {
+            transition: all 0.3s ease;
+        }
+        .norma-card.hidden {
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        // Funcionalidad de búsqueda y filtros
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const allFilterButton = document.querySelector('.filter-active');
+            const normaCards = document.querySelectorAll('.norma-card');
+            const normCount = document.getElementById('normCount');
+            const noResults = document.getElementById('noResults');
+
+            // Función para filtrar normas
+            function filterNormas() {
+                const searchTerm = searchInput.value.toLowerCase();
+                let visibleCount = 0;
+
+                normaCards.forEach(card => {
+                    const title = card.querySelector('h2').textContent.toLowerCase();
+                    const content = card.querySelector('p').textContent.toLowerCase();
+                    const matchesSearch = title.includes(searchTerm) || content.includes(searchTerm);
+                    
+                    if (matchesSearch) {
+                        card.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+
+                // Actualizar contador
+                normCount.textContent = visibleCount;
+
+                // Mostrar mensaje si no hay resultados
+                if (visibleCount === 0) {
+                    noResults.classList.remove('hidden');
+                } else {
+                    noResults.classList.add('hidden');
+                }
+            }
+
+            // Event listeners
+            searchInput.addEventListener('input', filterNormas);
+
+            // Filtros por categoría (ejemplo básico)
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase activa de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+                    allFilterButton.classList.remove('filter-active');
+                    
+                    // Agregar clase activa al botón clickeado
+                    this.classList.add('filter-active');
+                    
+                    // Aquí puedes agregar lógica de filtrado por categoría
+                    filterNormas();
+                });
+            });
+
+            // Botón "Todas"
+            allFilterButton.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+                this.classList.add('filter-active');
+                searchInput.value = '';
+                filterNormas();
+            });
+
+            // Inicializar contador
+            normCount.textContent = normaCards.length;
+        });
+    </script>
 </Layout>

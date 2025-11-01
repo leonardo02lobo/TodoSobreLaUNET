@@ -1,11 +1,292 @@
 ---
-
+// Header Combinado: Dark Terminal + Estilo Original
 ---
 
-<header class="bg-white shadow-md p-4">
-    <div class="flex flex-row justify-center items-center">
-        <h1 class="text-4xl font-bold text-gray-800 text-center">
-            Centro de Estudiantes de Ingeniería en Informática
-        </h1>
+<header
+    class="bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden"
+>
+    <div class="absolute inset-0 opacity-5">
+        <div class="grid grid-cols-12 gap-4 h-full">
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1"></div>
+        </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-10">
+        <div
+            class="absolute top-1/4 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-cyan-400 to-transparent animate-pulse"
+        >
+        </div>
+        <div
+            class="absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-blue-400 to-transparent animate-pulse animation-delay-1000"
+        >
+        </div>
+        <div
+            class="absolute top-3/4 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-purple-400 to-transparent animate-pulse animation-delay-2000"
+        >
+        </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-15">
+        <div
+            class="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-cyan-400 to-transparent animate-terminal-scan"
+        >
+        </div>
+        <div class="absolute top-10 left-10 text-cyan-300/10 font-mono text-sm">
+            > Initializing CEII system...
+        </div>
+        <div class="absolute top-20 left-20 text-cyan-300/10 font-mono text-sm">
+            > Loading student modules...
+        </div>
+        <div
+            class="absolute bottom-20 right-10 text-cyan-300/10 font-mono text-sm"
+        >
+            > Centro de Estudiantes ready
+        </div>
+    </div>
+
+    <div class="relative z-10">
+        <nav
+            class="container mx-auto px-6 py-6 fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-sm border-b border-cyan-400/20 z-50 rounded-b-4xl"
+        >
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center shadow-lg terminal-glow"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div
+                            class="absolute -inset-1 bg-cyan-400 rounded-lg blur opacity-30"
+                        >
+                        </div>
+                    </div>
+                    <a href="/" class="text-2xl font-bold text-white font-mono">
+                        CEII-UNET
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <a
+                        href="/"
+                        class="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400"
+                    >
+                        Inicio
+                    </a>
+                    <a
+                        href="/noticias"
+                        class="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400"
+                    >
+                        Noticias
+                    </a>
+                    <a
+                        href="/Eventos"
+                        class="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400"
+                    >
+                        Eventos
+                    </a>
+                    <a
+                        href="#footer"
+                        class="bg-cyan-500 text-gray-900 px-6 py-2 rounded-lg font-bold hover:bg-cyan-400 transition-all terminal-btn font-mono"
+                    >
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto px-6 py-6 mt-32">
+            <h1
+                class="text-4xl lg:text-7xl font-bold text-white mb-6 font-mono leading-tight text-center"
+            >
+                CENTRO DE ESTUDIANTES <br />
+                <span
+                    class="text-transparent bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text"
+                >
+                    >> INGENIERIA EN INFORMÁTICA {"<<"}
+                </span>
+            </h1>
+
+            <div class="max-w-6xl mx-auto">
+                <div
+                    class="flex flex-col lg:flex-row justify-between items-stretch gap-8"
+                >
+                    <div class="w-full lg:w-3/4 flex">
+                        <div
+                            class="bg-black/40 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-6 terminal-window w-full flex flex-col"
+                        >
+                            <div class="flex space-x-2 mb-4">
+                                <div class="w-3 h-3 bg-red-500 rounded-full">
+                                </div>
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full">
+                                </div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full">
+                                </div>
+                            </div>
+                            <div class="font-mono text-cyan-300 grow">
+                                <div class="mb-4">
+                                    <span class="text-green-400"
+                                        >ceii@unet.edu.ve:~$</span
+                                    >
+                                    <span class="text-white"
+                                        >status --system</span
+                                    >
+                                </div>
+                                <div class="mb-4 text-white space-y-2">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-green-400">✓</span>
+                                        <span
+                                            >Sistema de representación
+                                            estudiantil activo</span
+                                        >
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-green-400">✓</span>
+                                        <span
+                                            >Conectando talento y promoviendo
+                                            innovación</span
+                                        >
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-green-400">✓</span>
+                                        <span
+                                            >Plataforma de gestión estudiantil
+                                            operativa</span
+                                        >
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-green-400">✓</span>
+                                        <span
+                                            >Comunidad académica integrada</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="text-green-400"
+                                        >ceii@unet.edu.ve:~$</span
+                                    >
+                                    <span class="text-white"
+                                        >system_info --version</span
+                                    >
+                                </div>
+                                <div class="text-white">
+                                    <span class="text-cyan-400"
+                                        >CEII Platform</span
+                                    > v1.0.0 |
+                                    <span class="text-purple-400">UNET</span> |
+                                    <span class="text-green-400"
+                                        >Status: ONLINE</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full lg:w-1/4 flex justify-center items-center"
+                    >
+                        <div class="relative group w-full h-full">
+                            <div
+                                class="absolute -inset-2 bg-linear-to-r from-cyan-400 to-blue-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"
+                            >
+                            </div>
+                            <div
+                                class="relative bg-gray-800 rounded-xl p-4 border border-cyan-400/30 terminal-window w-full h-full flex flex-col items-center justify-center"
+                            >
+                                <div class="flex space-x-2 mb-3">
+                                    <div
+                                        class="w-2 h-2 bg-red-400 rounded-full"
+                                    >
+                                    </div>
+                                    <div
+                                        class="w-2 h-2 bg-yellow-400 rounded-full"
+                                    >
+                                    </div>
+                                    <div
+                                        class="w-2 h-2 bg-green-400 rounded-full"
+                                    >
+                                    </div>
+                                </div>
+                                <img
+                                    src="/gceii.webp"
+                                    alt="GCEII - Centro de Estudiantes"
+                                    class="rounded-full w-32 h-32 lg:w-40 lg:h-40 object-cover transition-transform duration-300 group-hover:scale-110"
+                                />
+                                <div class="mt-4 text-center">
+                                    <span
+                                        class="text-cyan-300 text-sm font-mono"
+                                        >[CEII_TEAM]</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
+
+<style>
+    .terminal-glow {
+        box-shadow:
+            0 0 15px rgba(34, 211, 238, 0.5),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    .terminal-btn {
+        box-shadow:
+            0 0 10px rgba(34, 211, 238, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .terminal-window {
+        box-shadow:
+            0 0 30px rgba(34, 211, 238, 0.2),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+    @keyframes terminal-scan {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(100vh);
+        }
+    }
+    .animate-terminal-scan {
+        animation: terminal-scan 8s linear infinite;
+    }
+    @keyframes pulse {
+        0%,
+        100% {
+            opacity: 0.1;
+        }
+        50% {
+            opacity: 0.3;
+        }
+    }
+    .animate-pulse {
+        animation: pulse 3s ease-in-out infinite;
+    }
+</style>

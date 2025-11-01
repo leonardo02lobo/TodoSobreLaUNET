@@ -1,13 +1,113 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layout/Layout.astro";
-import data from "./../data/Documento.json"
+import data from "./../data/Departamentos.json";
 ---
 
-<Layout title="Normas de Estudio">
-    <div class="grid grid-cols-3 p-10 gap-4">
-    {data.map((norma) => (
-        <Card title={norma.titulo} content={norma.descripcion}/>
-    ))}
-</div>
+<Layout title="Departamentos Académicos">
+    <section class="bg-gradient-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden min-h-screen">
+        <!-- Efectos de fondo sutiles -->
+        <div class="absolute inset-0 opacity-3">
+            <div class="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
+            <div class="absolute top-0 right-0 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
+            <div class="absolute bottom-0 left-1/2 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto">
+            <!-- Header de la página -->
+            <div class="text-center mb-12">
+                <div class="inline-block">
+                    <div class="mb-4">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                        Departamentos <br>
+                        <span class="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                            Académicos UNET
+                        </span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Conoce todos los departamentos académicos, horarios de atención y información de contacto
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contador de departamentos -->
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100">
+                    <span class="text-gray-600">Total de</span>
+                    <span class="text-blue-600 font-bold text-lg">{data.length}</span>
+                    <span class="text-gray-600">departamentos</span>
+                </div>
+            </div>
+
+            <!-- Grid de Departamentos Responsive -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {data.map((depa) => (
+                    <Card
+                        title={depa.nombre}
+                        content=""
+                        depa={true}
+                        hora={depa.horario}
+                        dias={depa.dias_abre}
+                        correo={depa.correo[0]}
+                        jefe_departamento={depa.jefe_departamento}
+                    />
+                ))}
+            </div>
+
+            <!-- Información adicional -->
+            <div class="mt-12 bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Horarios de Atención</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Los departamentos académicos atienden en horarios específicos. Verifica los días y horarios antes de realizar tu visita para una mejor atención.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Contacto Directo</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Utiliza los correos electrónicos proporcionados para comunicarte directamente con cada departamento y resolver tus inquietudes académicas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
+
+<style>
+    @keyframes pulse-slow {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.5; }
+    }
+    .animate-pulse-slow {
+        animation: pulse-slow 6s ease-in-out infinite;
+    }
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+</style>
