@@ -1,0 +1,71 @@
+[
+    {
+        "nombre": "Hello World Cup",
+        "descripcion": "Competencia de programación del Centro De Estudiantes De Ingeniería En Informática (CEII)",
+        "materia": "Competencia de Programación",
+        "tecnologias": [
+            "C++",
+            "Python",
+            "Java",
+            "Algoritmos"
+        ],
+        "imagen": "https://helloworldcup.netlify.app/Assets/fotoOrganizadores.jpeg",
+        "icono": "/fav.ico",
+        "enlace": "https://helloworldcup.netlify.app/",
+        "tipo": "Competencia",
+        "estado": "Activo",
+        "periodo": "Anual",
+        "estadisticas": {
+            "participantes": "50+",
+            "duracion": "10h",
+            "version": "1°",
+            "calificacion": "Excelente"
+        }
+    },
+    {
+        "nombre": "Sistema de Gestión Académica",
+        "descripcion": "Plataforma web para la gestión de materias y horarios estudiantiles",
+        "materia": "Ingeniería de Software",
+        "tecnologias": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Express"
+        ],
+        "imagen": "/images/proyecto-gestion.jpg",
+        "icono": "/icons/gestion-icon.png",
+        "enlace": "https://gestion-academica.unet.edu.ve",
+        "tipo": "Proyecto Académico",
+        "estado": "Completado",
+        "periodo": "2024-1",
+        "estadisticas": {
+            "participantes": "3",
+            "duracion": "4 meses",
+            "version": "2.1",
+            "calificacion": "A"
+        }
+    },
+    {
+        "nombre": "App Móvil UNET",
+        "descripcion": "Aplicación móvil para acceso a servicios universitarios",
+        "materia": "Desarrollo Móvil",
+        "tecnologias": [
+            "React Native",
+            "Firebase",
+            "Redux",
+            "TypeScript"
+        ],
+        "imagen": "/images/app-unet.jpg",
+        "icono": "/icons/app-icon.png",
+        "enlace": null,
+        "tipo": "Proyecto de Grado",
+        "estado": "En desarrollo",
+        "periodo": "2024-2",
+        "estadisticas": {
+            "participantes": "2",
+            "duracion": "6 meses",
+            "version": "0.8",
+            "calificacion": "En progreso"
+        }
+    }
+]

@@ -1,0 +1,227 @@
+---
+import Layout from "../layout/Layout.astro";
+---
+
+<Layout title="Acerca de Nosotros - CEII UNET">
+    <section class="min-h-screen bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden">
+        <!-- Fondo animado -->
+        <div class="absolute inset-0 opacity-3">
+            <div class="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
+            <div class="absolute top-0 right-0 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
+            <div class="absolute bottom-0 left-1/2 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"></div>
+        </div>
+
+        <div class="relative z-0 max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <div class="inline-block">
+                    <div class="mb-4">
+                        <div class="w-20 h-20 bg-linear-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                        Acerca de <br />
+                        <span class="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                            Nosotros
+                        </span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Conoce más sobre el Centro de Estudiantes de Ingeniería en Informática 
+                        y el desarrollo de esta plataforma
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grid de contenido -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Card: Quiénes Somos -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-blue-200">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800">Quiénes Somos</h2>
+                            <p class="text-blue-600 font-medium">CEII - UNET</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        El <strong>Centro de Estudiantes de Ingeniería en Informática (CEII)</strong> 
+                        es la organización estudiantil que representa, defiende y promueve los intereses 
+                        y el bienestar de todos los estudiantes de la carrera en la Universidad Nacional 
+                        Experimental del Táchira (UNET).
+                    </p>
+                    <div class="space-y-3 text-sm text-gray-500">
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                            <span>Representación estudiantil ante las autoridades</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                            <span>Organización de eventos académicos y culturales</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+                            <span>Apoyo y acompañamiento a los estudiantes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Nuestra Misión -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-blue-200">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-md">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800">Nuestra Misión</h2>
+                            <p class="text-green-600 font-medium">Propósito y compromiso</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Trabajamos para fortalecer la comunidad estudiantil de Ingeniería en Informática, 
+                        fomentando la participación, el desarrollo académico y profesional, y creando 
+                        espacios de integración que enriquezcan la experiencia universitaria.
+                    </p>
+                    <div class="p-4 bg-green-50 rounded-xl border border-green-200">
+                        <div class="flex items-center gap-3">
+                            <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                            <span class="text-green-700 font-medium">Comprometidos con el desarrollo estudiantil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card del Desarrollo -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-blue-200 mb-12">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-md">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Desarrollo de la Plataforma</h2>
+                        <p class="text-purple-600 font-medium">Tecnología e innovación</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Esta plataforma web fue desarrollada por estudiantes del CEII utilizando 
+                            tecnologías modernas para ofrecer una experiencia óptima a toda la 
+                            comunidad estudiantil de Ingeniería en Informática.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <span class="text-blue-600 font-bold text-sm">A</span>
+                                </div>
+                                <span class="text-gray-700">Framework Astro</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-cyan-100 rounded-lg flex items-center justify-center">
+                                    <span class="text-cyan-600 font-bold text-sm">T</span>
+                                </div>
+                                <span class="text-gray-700">Tailwind CSS</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <span class="text-green-600 font-bold text-sm">R</span>
+                                </div>
+                                <span class="text-gray-700">React Components</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-center">
+                        <div class="relative group">
+                            <div class="absolute -inset-4 bg-linear-to-r from-purple-400 to-pink-400 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="relative bg-white rounded-xl p-6 border border-purple-200 shadow-md">
+                                <img 
+                                    src="/gceii.webp" 
+                                    alt="Logo CEII - Centro de Estudiantes de Ingeniería en Informática"
+                                    class="w-32 h-32 rounded-lg object-cover mx-auto mb-4"
+                                />
+                                <div class="text-center">
+                                    <span class="text-purple-600 font-mono text-sm font-bold">[CEII_TEAM]</span>
+                                    <p class="text-gray-500 text-xs mt-1">Centro de Estudiantes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Contacto
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-blue-200">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-linear-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center shadow-md">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Contáctanos</h2>
+                        <p class="text-orange-600 font-medium">Estamos para servirte</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            ¿Tienes preguntas, sugerencias o necesitas apoyo? No dudes en contactarnos. 
+                            Estamos aquí para ayudarte en todo lo que necesites.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <div class="flex items-center gap-2">
+                                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                                <span>Universidad Nacional Experimental del Táchira</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                <span>Ingeniería en Informática</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-center">
+                        <a 
+                            href="/contacto" 
+                            class="bg-linear-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 inline-flex items-center gap-3"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                            Enviar Mensaje
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+</Layout>
+
+<style>
+    @keyframes pulse-slow {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.5; }
+    }
+    .animate-pulse-slow {
+        animation: pulse-slow 6s ease-in-out infinite;
+    }
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+</style>

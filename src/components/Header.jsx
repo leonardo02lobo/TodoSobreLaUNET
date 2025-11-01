@@ -93,7 +93,7 @@ const Header = () => {
               <a href="/" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
                 Inicio
               </a>
-              <a href="/noticias" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
+              <a href="/Noticias" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
                 Noticias
               </a>
               <a href="/Eventos" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
@@ -122,7 +122,7 @@ const Header = () => {
               <a href="/" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
                 Inicio
               </a>
-              <a href="/noticias" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
+              <a href="/Noticias" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
                 Noticias
               </a>
               <a href="/Eventos" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
@@ -136,7 +136,7 @@ const Header = () => {
         </nav>
 
         <div className="container mx-auto px-6 py-6 mt-32">
-          <h1 className="text-2xl lg:text-7xl font-bold text-white mb-6 font-mono leading-tight text-center">
+          <h1 className="text-2xl lg:text-6xl font-bold text-white mb-6 font-mono leading-tight text-center">
             CENTRO DE ESTUDIANTES <br />
             <span className="text-transparent bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text">
               &gt;&gt; INGENIERIA EN INFORMÁTICA {"<<"}
