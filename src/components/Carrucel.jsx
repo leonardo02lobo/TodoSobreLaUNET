@@ -4,13 +4,13 @@ const ProyectosCarousel = ({ proyectos }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextProject = () => {
-        setCurrentIndex((prevIndex) => 
+        setCurrentIndex((prevIndex) =>
             prevIndex === proyectos.length - 1 ? 0 : prevIndex + 1
         );
     };
 
     const prevProject = () => {
-        setCurrentIndex((prevIndex) => 
+        setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? proyectos.length - 1 : prevIndex - 1
         );
     };
@@ -80,7 +80,7 @@ const ProyectosCarousel = ({ proyectos }) => {
                         <img
                             src={proyecto.imagen}
                             alt={proyecto.nombre}
-                            className="w-full h-64 object-cover rounded-xl shadow-md"
+                            className="w-full h-full max-h-96 object-cover rounded-xl shadow-md"
                         />
                     </div>
                 </div>
@@ -117,9 +117,18 @@ const ProyectosCarousel = ({ proyectos }) => {
 
                             {proyecto.periodo && (
                                 <div className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 shrink-0"></div>
+                                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 shrink-0"></div>
                                     <p className="text-gray-600">
                                         <strong className="text-gray-800">Periodo:</strong> {proyecto.periodo}
+                                    </p>
+                                </div>
+                            )}
+
+                            {proyecto.link === "" ? null : (
+                                <div className="flex items-start space-x-3">
+                                    <div className="w-2 h-2 bg-amber-950 rounded-full mt-2 shrink-0"></div>
+                                    <p className="text-gray-600">
+                                        <strong className="text-gray-800">Accede al proyecto: <a href={proyecto.link} target='_blank' className='underline text-blue-600'>Link</a></strong>
                                     </p>
                                 </div>
                             )}
@@ -149,25 +158,13 @@ const ProyectosCarousel = ({ proyectos }) => {
                             <div className="text-2xl font-bold text-green-600">
                                 {proyecto.estadisticas?.participantes || "N/A"}
                             </div>
-                            <div className="text-sm text-green-800">Participantes</div>
+                            <div className="text-sm text-green-800">Participante(s)</div>
                         </div>
                         <div className="bg-purple-50 rounded-lg p-4 text-center">
                             <div className="text-2xl font-bold text-purple-600">
                                 {proyecto.estadisticas?.duracion || "N/A"}
                             </div>
                             <div className="text-sm text-purple-800">Duración</div>
-                        </div>
-                        <div className="bg-orange-50 rounded-lg p-4 text-center">
-                            <div className="text-2xl font-bold text-orange-600">
-                                {proyecto.estadisticas?.version || "1.0"}
-                            </div>
-                            <div className="text-sm text-orange-800">Versión</div>
-                        </div>
-                        <div className="bg-cyan-50 rounded-lg p-4 text-center">
-                            <div className="text-2xl font-bold text-cyan-600">
-                                {proyecto.estadisticas?.calificacion || "A"}
-                            </div>
-                            <div className="text-sm text-cyan-800">Calificación</div>
                         </div>
                     </div>
                 </div>
@@ -194,9 +191,8 @@ const ProyectosCarousel = ({ proyectos }) => {
                                 <button
                                     key={index}
                                     onClick={() => goToProject(index)}
-                                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                        index === currentIndex ? 'bg-blue-500 scale-125' : 'bg-gray-300 hover:bg-gray-400'
-                                    }`}
+                                    className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-blue-500 scale-125' : 'bg-gray-300 hover:bg-gray-400'
+                                        }`}
                                 />
                             ))}
                         </div>

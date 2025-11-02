@@ -76,14 +76,14 @@ const Header = () => {
         <nav className="container mx-auto px-6 py-6 fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-sm border-b border-cyan-400/20 z-50 rounded-b-4xl">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              <div className="relative">
+              {/* <div className="relative">
                 <div className="w-12 h-12 bg-linear-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center shadow-lg terminal-glow">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
                 </div>
                 <div className="absolute -inset-1 bg-cyan-400 rounded-lg blur opacity-30"></div>
-              </div>
+              </div> */}
               <a href="/" className="text-2xl font-bold text-white font-mono">
                 CEII-UNET
               </a>
@@ -93,8 +93,8 @@ const Header = () => {
               <a href="/" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
                 Inicio
               </a>
-              <a href="/Noticias" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
-                Noticias
+              <a href="/Proyectos" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
+                Proyectos
               </a>
               <a href="/Eventos" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
                 Eventos
@@ -122,8 +122,8 @@ const Header = () => {
               <a href="/" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
                 Inicio
               </a>
-              <a href="/Noticias" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
-                Noticias
+              <a href="/Proyectos" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
+                Proyectos
               </a>
               <a href="/Eventos" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
                 Eventos
@@ -139,7 +139,7 @@ const Header = () => {
           <h1 className="text-2xl lg:text-6xl font-bold text-white mb-6 font-mono leading-tight text-center">
             CENTRO DE ESTUDIANTES <br />
             <span className="text-transparent bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text">
-              &gt;&gt; INGENIERIA EN INFORMÁTICA {"<<"}
+              &gt;&gt; INGENIERÍA EN INFORMÁTICA {"<<"}
             </span>
           </h1>
 
