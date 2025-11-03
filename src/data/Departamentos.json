@@ -1,192 +1,142 @@
 [
   {
     "nombre": "Ing. Producción Animal",
-    "ubicacion": "Bloque Agropecuario",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "proanim@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "MVZ. Carmen López"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Ing. Agroindustrial",
-    "ubicacion": "Bloque Agroindustrial",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "agroindust@unet.edu.ve",
-      "Ing.agroindustrial.unet@gmail.com"
+      ""
     ],
-    "jefe_departamento": "Ing. Pedro Gutiérrez"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Lic. en Psicología",
-    "ubicacion": "Edificio de Ciencias Humanas",
-    "dias_abre": "X",
+    "ubicacion": "Edificio B",
+    "dias_abre": "Lunes a Viernes",
     "horario": "8:30 a.m. - 12:00 p.m.",
     "correo": [
-      "psicologia@unet.edu.ve",
       "departamentopsicologiaunet@gmail.com"
     ],
-    "jefe_departamento": "Dra. Laura Rivas"
+    "jefe_departamento": "Prof. Patricia Fournillier"
   },
   {
     "nombre": "Lic. en Música",
-    "ubicacion": "Edificio de Artes",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "musica@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Prof. Andrés Torres"
+    "jefe_departamento": ""
   },
   {
     "nombre": "TSU Entrenamiento Deportivo",
-    "ubicacion": "Complejo Deportivo UNET",
-    "dias_abre": "Lunes a Viernes",
-    "horario": "X",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "ded@unet.edu.ve",
-      "maguerrero@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Lic. Marcos Castillo"
-  },
-  {
-    "nombre": "Ciencias de la Salud",
-    "ubicacion": "Bloque de Ciencias",
-    "dias_abre": "Lunes a Viernes",
-    "horario": "X",
-    "correo": [
-      "cssalud@unet.edu.ve"
-    ],
-    "jefe_departamento": "Dra. Patricia Suárez"
-  },
-  {
-    "nombre": "Matemática y Física",
-    "ubicacion": "Edificio Académico",
-    "dias_abre": "Lunes a Viernes",
-    "horario": "X",
-    "correo": [
-      "matyfis@unet.edu.ve",
-      "gilbpar@unet.edu.ve"
-    ],
-    "jefe_departamento": "Prof. Claudia Díaz"
-  },
-  {
-    "nombre": "Ciencias Sociales",
-    "ubicacion": "Edificio de Humanidades",
-    "dias_abre": "Lunes a Viernes",
-    "horario": "X",
-    "correo": [],
-    "jefe_departamento": "Soc. María Cárdenas"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Química",
-    "ubicacion": "Laboratorio de Ciencias",
-    "dias_abre": "Lunes a Viernes",
-    "horario": "X",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "quimica@unet.edu.ve",
-      "mccarden@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Lic. Héctor Valera"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Ing. Industrial",
-    "ubicacion": "Bloque de Ingeniería Industrial, ",
-    "dias_abre": "Lunes y Miercoles",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "indust@unet.edu.ve",
-      "msanchez@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Ing. Carolina Pérez"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Ing. Informática",
-    "ubicacion": "Bloque de Ingeniería Informática",
+    "ubicacion": "Edificio C",
     "dias_abre": "Lunes a Jueves",
     "horario": "8:30 a.m. - 12:00 p.m.",
     "correo": [
-      "informat@unet.edu.ve",
-      "ikool@unet.edu.ve"
+      "informat@unet.edu.ve"
     ],
-    "jefe_departamento": "Ing. María González"
+    "jefe_departamento": "Ing. Desirre Suarez"
   },
   {
     "nombre": "Ing. Mecánica",
-    "ubicacion": "X",
-    "dias_abre": "Lunes a Viernes",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "mecanica@unet.edu.ve",
-      "mpacheco@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Ing. José Ramírez"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Ing. Civil",
-    "ubicacion": "X",
-    "dias_abre": "Lunes a Viernes",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "civil@unet.edu.ve",
-      "asoto@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Ing. Luis Fernández"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Ing. Electrónica",
-    "ubicacion": "Bloque de Ingeniería Electrónica",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "electron@unet.edu.ve",
-      "pablo.castro@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Ing. Ricardo Morales"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Arquitectura",
-    "ubicacion": "Bloque de Arquitectura",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "arquit@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Arq. Daniela Mendoza"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Ing. Agronómica",
-    "ubicacion": "Bloque Agrícola",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "agronomi@unet.edu.ve",
-      "mescalan@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Ing. Javier Suárez"
+    "jefe_departamento": ""
   },
   {
     "nombre": "Ing. Ambiental",
-    "ubicacion": "Bloque de Ingeniería Ambiental",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
+    "ubicacion": "",
+    "dias_abre": "",
+    "horario": "",
     "correo": [
-      "dptoamb@unet.edu.ve",
-      "Ronny.chacon@unet.edu.ve"
+      ""
     ],
-    "jefe_departamento": "Ing. Ana Soto"
-  },
-  {
-    "nombre": "Ing. Carreras Técnicas - Semi Presenciales",
-    "ubicacion": "X",
-    "dias_abre": "X",
-    "horario": "8:30 a.m. - 12:00 p.m.",
-    "correo": [
-      "X"
-    ],
-    "jefe_departamento": "X"
+    "jefe_departamento": ""
   }
 ]
