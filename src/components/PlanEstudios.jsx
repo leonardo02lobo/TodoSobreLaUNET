@@ -215,7 +215,7 @@ const PlanEstudiosAvanzado = () => {
                                                 </p>
                                             </div>
                                         </div>
-
+                                        {/*
                                         <div className="border-t border-gray-200/60 pt-6">
                                             <h4 className="text-sm font-semibold text-gray-700 mb-3 flex items-center gap-2">
                                                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
@@ -224,7 +224,7 @@ const PlanEstudiosAvanzado = () => {
                                             <p className="text-sm text-gray-600">
                                                 <strong className="text-gray-700">Profesor:</strong> {selectedMateria.profesor}
                                             </p>
-                                        </div>
+                                        </div>*/}
                                     </div>
                                 </div>
                             </div>

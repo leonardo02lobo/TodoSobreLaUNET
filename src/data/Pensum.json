@@ -6,7 +6,7 @@
         "nombre": "Computación I",
         "unidad_credito": 3,
         "Codigo": "0415102T",
-        "descripcion": "Conceptos básicos de computación, hardware, software y lógica algorítmica.",
+        "descripcion": "Conceptos básicos de computación, software y lógica algorítmica.",
         "profesor": "Diserre Suarez, Nixon Paticho, Omar Fernandez, Armando Carrero, Jose Fernandez"
       },
       {
@@ -20,7 +20,7 @@
         "nombre": "Matemática I",
         "unidad_credito": 4,
         "Codigo": "0826101T",
-        "descripcion": "Cálculo diferencial e integral en una variable real. Fundamentos del análisis matemático.",
+        "descripcion": "Cálculo diferencial en una variable real, conceptos de limites y funciones. Fundamentos del análisis matemático.",
         "profesor": "Blanca Gamez, leidy Diaz, Susana Pardo, Angela Torres, Keith Maldonado, Omar Ropero, Hernesto Omar"
       },
       {
@@ -60,7 +60,7 @@
         "nombre": "Programación I",
         "unidad_credito": 4,
         "codigo": "0416202T",
-        "descripcion": "Fundamentos de la programación estructurada y resolución de problemas computacionales.",
+        "descripcion": "Fundamentos de la programación estructurada y resolución de problemas computacionales. Conocimiento en POO.",
         "profesor": "Desirre Suarez"
       },
       {
@@ -81,7 +81,7 @@
         "nombre": "Matemática II",
         "unidad_credito": 4,
         "codigo": "0826201T",
-        "descripcion": "Cálculo integral y aplicaciones, introducción a ecuaciones diferenciales.",
+        "descripcion": "Cálculo integral y aplicaciones.",
         "profesor": "Yelitza Cardenas, Leidy Diaz, Susana Pardo, Omar Ropero,Tania"
       }
     ]
@@ -100,7 +100,7 @@
         "nombre": "Estructura de Datos",
         "unidad_credito": 4,
         "codigo": "0416304T",
-        "descripcion": "Diseño e implementación de estructuras de datos fundamentales.",
+        "descripcion": "Diseño e implementación de estructuras de datos fundamentales como pilas, colas arboles y grafos.",
         "profesor": "Vannesa Paolini"
       },
       {
@@ -121,7 +121,7 @@
         "nombre": "Matemática III",
         "unidad_credito": 4,
         "codigo": "0826301T",
-        "descripcion": "Ecuaciones diferenciales y series numéricas.",
+        "descripcion": "Algebra lineal y conceptos en calculo multivariable.",
         "profesor": "Gerzon Barazarte, Tania Peña, Arelis Diaz, Jorge Lopez"
       },
       {
@@ -147,14 +147,14 @@
         "nombre": "Programación II",
         "unidad_credito": 4,
         "codigo": "0415405T",
-        "descripcion": "Programación orientada a objetos y estructuras avanzadas.",
+        "descripcion": "Programación en multiples paradigmas y técnicas avanzadas de desarrollo.",
         "profesor": "Desirre Suarez"
       },
       {
         "nombre": "Matemática IV",
         "unidad_credito": 4,
         "codigo": "0826401T",
-        "descripcion": "Cálculo multivariable y transformadas aplicadas.",
+        "descripcion": "Transformadas aplicadas y Ecuaciones diferenciales.",
         "profesor": "Edwin Velazquez, Maria Tarazona, Gerson Bararzarte"
       },
       {
@@ -256,7 +256,7 @@
         "unidad_credito": 3,
         "codigo": "0425601T",
         "descripcion": "Diseño, implementación y administración de sistemas de información.",
-        "profesor": "Iveet Karol, Arlenys Valera"
+        "profesor": "Iveet Kool, Arlenys Valera"
       },
       {
         "nombre": "Sistemas Operativos",
@@ -283,7 +283,7 @@
         "nombre": "Economia",
         "unidad_credito": 0,
         "codigo": "1013401T",
-        "descripcion": "Ejecución del proyecto de servicio comunitario para el desarrollo tecnológico y social.",
+        "descripcion": "Conceptos basicos de la economia y su aplicacion en la ingenieria.",
         "profesor": "Rosa Guerrero, Zirlis Diaz"
       },
       {
@@ -301,7 +301,7 @@
       {
         "nombre": "Electiva I",
         "unidad_credito": 2,
-        "descripcion": "Materia optativa según el interés del estudiante (ej. IA, redes, bioinformática).",
+        "descripcion": "Materia optativa según el interés del estudiante (ej. IA, redes).",
         "profesor": "por asignar"
       },
       {
@@ -398,6 +398,12 @@
         "profesor": "William Armando Sierra Caceres"
       },
       {
+        "nombre": "Electiva III",
+        "unidad_credito": 2,
+        "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
+        "profesor": "por asignar"
+      },
+      {
         "nombre": "Electiva IV",
         "unidad_credito": 2,
         "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
@@ -408,12 +414,6 @@
         "unidad_credito": 3,
         "codigo": "0425901T",
         "descripcion": "Modelos, herramientas y prácticas para el desarrollo de software.",
-        "profesor": "por asignar"
-      },
-      {
-        "nombre": "Electiva III",
-        "unidad_credito": 2,
-        "descripcion": "Materia optativa para fortalecer conocimientos específicos.",
         "profesor": "por asignar"
       },
       {
