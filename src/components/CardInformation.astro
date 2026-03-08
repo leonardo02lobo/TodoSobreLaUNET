@@ -1,0 +1,29 @@
+---
+interface Props {
+    title: string;
+    subTitle: string;
+    description: string;
+}
+const { title, subTitle, description } = Astro.props as Props;
+---
+
+<div class="w-full lg:w-1/2">
+    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col justify-between h-[350px] max-h-[350px] min-h-[350px]">
+        <div class="flex items-center gap-4 mb-6">
+            <div
+                class="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md"
+            >
+                <slot name="icon" />
+            </div>
+            <div class="flex-1 min-w-0">
+                <h2 class="text-2xl font-bold text-gray-800 truncate">
+                    {title}
+                </h2>
+                <p class="text-blue-600 font-medium truncate">
+                    {subTitle}
+                </p>
+            </div>
+        </div>
+        <p class="text-gray-600 leading-relaxed text-lg flex-1 overflow-auto">{description}</p>
+    </div>
+</div>

@@ -3,56 +3,91 @@ import ProyectosCarousel from "../components/Carrucel";
 import Layout from "../layout/Layout.astro";
 
 import proyectos from "../data/proyectos.json";
+import HeaderSection from "../components/HeaderSection";
 
 const totalProyectos = proyectos.length;
-const totalTecnologias = new Set(proyectos.flatMap((proyecto) => proyecto.tecnologias || [])).size;
+const totalTecnologias = new Set(
+    proyectos.flatMap((proyecto) => proyecto.tecnologias || []),
+).size;
 ---
 
 <Layout title="Proyectos - CEII UNET">
-    <section class="min-h-screen bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden">
+    <section
+        class="min-h-screen bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden"
+    >
         <div class="absolute inset-0 opacity-3">
-            <div class="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
-            <div class="absolute top-0 right-0 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
-            <div class="absolute bottom-0 left-1/2 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"></div>
+            <div
+                class="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"
+            >
+            </div>
+            <div
+                class="absolute top-0 right-0 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"
+            >
+            </div>
+            <div
+                class="absolute bottom-0 left-1/2 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"
+            >
+            </div>
         </div>
 
         <div class="relative z-0 max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block">
-                    <div class="mb-4">
-                        <div class="w-20 h-20 bg-linear-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                            </svg>
-                        </div>
+            <HeaderSection
+                title="Nuestros"
+                subTitle="Proyectos"
+                description="Descubre los proyectos desarrollados por estudiantes de Ingeniería en Informática"
+            >
+                <svg
+                    class="w-10 h-10 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+            </HeaderSection>
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto"
+            >
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100"
+                >
+                    <div
+                        class="text-3xl font-bold text-purple-600 mb-2"
+                        id="proyectosCount"
+                    >
+                        {totalProyectos}
                     </div>
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-                        Nuestros <br />
-                        <span class="bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                            Proyectos
-                        </span>
-                    </h1>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Descubre los proyectos desarrollados por estudiantes de Ingeniería en Informática
-                    </p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
-                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100">
-                    <div class="text-3xl font-bold text-purple-600 mb-2" id="proyectosCount">{totalProyectos}</div>
                     <div class="text-sm text-gray-600">Proyectos Totales</div>
                 </div>
-                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100">
-                    <div class="text-3xl font-bold text-blue-600 mb-2" id="tecnologiasCount">{totalTecnologias}</div>
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100"
+                >
+                    <div
+                        class="text-3xl font-bold text-blue-600 mb-2"
+                        id="tecnologiasCount"
+                    >
+                        {totalTecnologias}
+                    </div>
                     <div class="text-sm text-gray-600">Tecnologías</div>
                 </div>
-                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100">
-                    <div class="text-3xl font-bold text-green-600 mb-2">100%</div>
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100"
+                >
+                    <div class="text-3xl font-bold text-green-600 mb-2">
+                        100%
+                    </div>
                     <div class="text-sm text-gray-600">Estudiantil</div>
                 </div>
-                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100">
-                    <div class="text-3xl font-bold text-orange-600 mb-2">UNET</div>
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-100"
+                >
+                    <div class="text-3xl font-bold text-orange-600 mb-2">
+                        UNET
+                    </div>
                     <div class="text-sm text-gray-600">Comunidad</div>
                 </div>
             </div>
@@ -62,34 +97,58 @@ const totalTecnologias = new Set(proyectos.flatMap((proyecto) => proyecto.tecnol
             </div>
 
             <div class="flex justify-center gap-8 max-w-6xl mx-auto">
-                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100"
+                >
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                ></path>
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-800">Desarrollo estudiantil</h2>
-                            <p class="text-blue-600 font-medium">Aprendizaje práctico</p>
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                Desarrollo estudiantil
+                            </h2>
+                            <p class="text-blue-600 font-medium">
+                                Aprendizaje práctico
+                            </p>
                         </div>
                     </div>
                     <p class="text-gray-600 leading-relaxed mb-6">
-                        Estos proyectos representan el esfuerzo y dedicación de los estudiantes 
-                        de Ingeniería en Informática, aplicando conocimientos teóricos en 
-                        soluciones reales e innovadoras.
+                        Estos proyectos representan el esfuerzo y dedicación de
+                        los estudiantes de Ingeniería en Informática, aplicando
+                        conocimientos teóricos en soluciones reales e
+                        innovadoras.
                     </p>
                     <div class="space-y-3 text-sm text-gray-500">
                         <div class="flex items-center gap-2">
-                            <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                            <span>Proyectos académicos y extracurriculares</span>
+                            <div class="w-1.5 h-1.5 bg-green-500 rounded-full">
+                            </div>
+                            <span>Proyectos académicos y extracurriculares</span
+                            >
                         </div>
                         <div class="flex items-center gap-2">
-                            <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
-                            <span>Tecnologías modernas y mejores prácticas</span>
+                            <div class="w-1.5 h-1.5 bg-purple-500 rounded-full">
+                            </div>
+                            <span>Tecnologías modernas y mejores prácticas</span
+                            >
                         </div>
                         <div class="flex items-center gap-2">
-                            <div class="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
+                            <div class="w-1.5 h-1.5 bg-orange-500 rounded-full">
+                            </div>
                             <span>Colaboración y trabajo en equipo</span>
                         </div>
                     </div>
@@ -133,8 +192,13 @@ const totalTecnologias = new Set(proyectos.flatMap((proyecto) => proyecto.tecnol
 
 <style>
     @keyframes pulse-slow {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.5; }
+        0%,
+        100% {
+            opacity: 0.3;
+        }
+        50% {
+            opacity: 0.5;
+        }
     }
     .animate-pulse-slow {
         animation: pulse-slow 6s ease-in-out infinite;
