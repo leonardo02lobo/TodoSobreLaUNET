@@ -1,120 +1,215 @@
 ---
+import HeaderSection from "../components/HeaderSection.jsx";
 import Layout from "../layout/Layout.astro";
 ---
 
 <Layout title="Beca Francia">
-    <section class="bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden min-h-screen">
+    <section
+        class="bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden min-h-screen"
+    >
         <div class="absolute inset-0 opacity-3">
-            <div class="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
-            <div class="absolute top-0 right-0 w-72 h-72 bg-green-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
-            <div class="absolute bottom-0 left-1/2 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"></div>
+            <div
+                class="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"
+            >
+            </div>
+            <div
+                class="absolute top-0 right-0 w-72 h-72 bg-green-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"
+            >
+            </div>
+            <div
+                class="absolute bottom-0 left-1/2 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"
+            >
+            </div>
         </div>
 
         <div class="relative max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block">
-                    <div class="mb-4">
-                        <div class="w-20 h-20 bg-linear-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v6l9-5m-9 5l-9-5m9 5l9-5"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-                        Beca Francia <br>
-                        <span class="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                            Programa de Intercambio
-                        </span>
-                    </h1>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Oportunidad única para estudiar en universidades francesas y enriquecer tu experiencia académica internacional
-                    </p>
-                </div>
-            </div>
+            <HeaderSection
+                title="Beca Francia"
+                subTitle="Programa de Intercambio"
+                description="Oportunidad única para estudiar en universidades francesas y enriquecer tu experiencia académica internacional"
+            >
+                <svg
+                    class="w-10 h-10 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14v6l9-5m-9 5l-9-5m9 5l9-5"></path>
+                </svg>
+            </HeaderSection>
 
-            <!-- Imagen de la beca -->
             <div class="text-center mb-16">
-                <img src="/becaFrancia.jpg" alt="Beca Francia" class="rounded-2xl shadow-lg max-w-full h-auto mx-auto" />
+                <img
+                    src="/becaFrancia.jpg"
+                    alt="Beca Francia"
+                    class="rounded-2xl shadow-lg max-w-full h-auto mx-auto"
+                />
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                <!-- Encargada y Coordinación -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-blue-200 flex flex-col min-h-[420px]">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-blue-200 flex flex-col min-h-[420px]"
+                >
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                                ></path>
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-800">Coordinación</h2>
-                            <p class="text-blue-600 font-medium">Encargada del programa</p>
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                Coordinación
+                            </h2>
+                            <p class="text-blue-600 font-medium">
+                                Encargada del programa
+                            </p>
                         </div>
                     </div>
 
                     <div class="space-y-6 grow">
-                        <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
-                            <h3 class="font-semibold text-gray-800 mb-2">Encargada:</h3>
-                            <p class="text-blue-700 font-medium">Rosaura Gómez</p>
+                        <div
+                            class="bg-blue-50 rounded-xl p-4 border border-blue-200"
+                        >
+                            <h3 class="font-semibold text-gray-800 mb-2">
+                                Encargada:
+                            </h3>
+                            <p class="text-blue-700 font-medium">
+                                Rosaura Gómez
+                            </p>
                         </div>
 
                         <div class="space-y-4">
-                            <h3 class="font-semibold text-gray-800">Encargados por Carrera</h3>
+                            <h3 class="font-semibold text-gray-800">
+                                Encargados por Carrera
+                            </h3>
                             <p class="text-gray-600">
-                                Cada carrera cuenta con un encargado específico para guiar a los estudiantes en el proceso de postulación y preparación para el intercambio académico en Francia.
+                                Cada carrera cuenta con un encargado específico
+                                para guiar a los estudiantes en el proceso de
+                                postulación y preparación para el intercambio
+                                académico en Francia.
                             </p>
                             <div class="text-sm text-gray-500">
-                                Contacta con tu coordinador de carrera para más información.
+                                Contacta con tu coordinador de carrera para más
+                                información.
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Requisitos Académicos -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-green-200 flex flex-col min-h-[420px]">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-green-200 flex flex-col min-h-[420px]"
+                >
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-md">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-800">Requisitos Académicos</h2>
-                            <p class="text-green-600 font-medium">Índice y nivel de inglés</p>
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                Requisitos Académicos
+                            </h2>
+                            <p class="text-green-600 font-medium">
+                                Índice y nivel de inglés
+                            </p>
                         </div>
                     </div>
 
                     <div class="space-y-6 grow">
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-green-50 rounded-lg p-4 border border-green-200">
-                                <h4 class="font-semibold text-green-800 mb-1">Índice Mínimo</h4>
-                                <p class="text-2xl font-bold text-green-600">6.5</p>
+                            <div
+                                class="bg-green-50 rounded-lg p-4 border border-green-200"
+                            >
+                                <h4 class="font-semibold text-green-800 mb-1">
+                                    Índice Mínimo
+                                </h4>
+                                <p class="text-2xl font-bold text-green-600">
+                                    6.5
+                                </p>
                             </div>
-                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                                <h4 class="font-semibold text-blue-800 mb-1">Índice Deseado</h4>
-                                <p class="text-2xl font-bold text-blue-600">7.5</p>
+                            <div
+                                class="bg-blue-50 rounded-lg p-4 border border-blue-200"
+                            >
+                                <h4 class="font-semibold text-blue-800 mb-1">
+                                    Índice Deseado
+                                </h4>
+                                <p class="text-2xl font-bold text-blue-600">
+                                    7.5
+                                </p>
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="flex items-center gap-3">
-                                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
-                                <span class="text-gray-700">Mínimo inglés B1 o B2</span>
+                                <div class="w-3 h-3 bg-green-400 rounded-full">
+                                </div>
+                                <span class="text-gray-700"
+                                    >Mínimo inglés B1 o B2</span
+                                >
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
-                                <span class="text-gray-700">Plus opcional B1 o B2 Frances</span>
+                                <div class="w-3 h-3 bg-blue-400 rounded-full">
+                                </div>
+                                <span class="text-gray-700"
+                                    >Plus opcional B1 o B2 Frances</span
+                                >
                             </div>
                         </div>
 
-                        <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
+                        <div
+                            class="bg-yellow-50 rounded-xl p-4 border border-yellow-200"
+                        >
                             <div class="flex items-center gap-3">
-                                <div class="w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
-                                    <span class="text-yellow-800 font-bold text-xs">!</span>
+                                <div
+                                    class="w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center"
+                                >
+                                    <span
+                                        class="text-yellow-800 font-bold text-xs"
+                                        >!</span
+                                    >
                                 </div>
-                                <span class="text-yellow-800 font-medium">Índice superior a 8: Chance para beca Eiffel</span>
+                                <span class="text-yellow-800 font-medium"
+                                    >Índice superior a 8: Chance para beca
+                                    Eiffel</span
+                                >
                             </div>
                         </div>
                     </div>
@@ -122,88 +217,155 @@ import Layout from "../layout/Layout.astro";
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                <!-- Requisitos Adicionales -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-purple-200 flex flex-col min-h-[420px]">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-purple-200 flex flex-col min-h-[420px]"
+                >
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-md">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 0V8a2 2 0 01-2 2H8a2 2 0 01-2-2V6m8 0H8"></path>
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 0V8a2 2 0 01-2 2H8a2 2 0 01-2-2V6m8 0H8"
+                                ></path>
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-800">Requisitos Adicionales</h2>
-                            <p class="text-purple-600 font-medium">Servicio y semestre</p>
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                Requisitos Adicionales
+                            </h2>
+                            <p class="text-purple-600 font-medium">
+                                Servicio y semestre
+                            </p>
                         </div>
                     </div>
 
                     <div class="space-y-6 grow">
                         <div class="flex gap-4">
                             <div class="shrink-0">
-                                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                <div
+                                    class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm"
+                                >
                                     1
                                 </div>
                             </div>
                             <div class="grow">
-                                <h3 class="font-semibold text-gray-800 mb-2">Servicio Comunitario</h3>
+                                <h3 class="font-semibold text-gray-800 mb-2">
+                                    Servicio Comunitario
+                                </h3>
                                 <p class="text-gray-600">
-                                    Completar el servicio comunitario requerido por la universidad.
+                                    Completar el servicio comunitario requerido
+                                    por la universidad.
                                 </p>
                             </div>
                         </div>
 
                         <div class="flex gap-4">
                             <div class="shrink-0">
-                                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                <div
+                                    class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm"
+                                >
                                     2
                                 </div>
                             </div>
                             <div class="grow">
-                                <h3 class="font-semibold text-gray-800 mb-2">7mo Semestre</h3>
+                                <h3 class="font-semibold text-gray-800 mb-2">
+                                    7mo Semestre
+                                </h3>
                                 <p class="text-gray-600">
-                                    Estar cursando o haber completado el 7mo semestre de la carrera.
+                                    Estar cursando o haber completado el 7mo
+                                    semestre de la carrera.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Perfil Profesional -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-red-200 flex flex-col min-h-[420px]">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-red-200 flex flex-col min-h-[420px]"
+                >
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-linear-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center shadow-md">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 0V8a2 2 0 01-2 2H8a2 2 0 01-2-2V6m8 0H8"></path>
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 0V8a2 2 0 01-2 2H8a2 2 0 01-2-2V6m8 0H8"
+                                ></path>
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-800">Perfil Profesional</h2>
-                            <p class="text-red-600 font-medium">Cursos y especializaciones</p>
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                Perfil Profesional
+                            </h2>
+                            <p class="text-red-600 font-medium">
+                                Cursos y especializaciones
+                            </p>
                         </div>
                     </div>
 
                     <div class="space-y-6 grow">
                         <div class="space-y-4">
-                            <h3 class="font-semibold text-gray-800">Desarrollo de Competencias</h3>
+                            <h3 class="font-semibold text-gray-800">
+                                Desarrollo de Competencias
+                            </h3>
                             <div class="space-y-3">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
-                                    <span class="text-gray-700">Cursos especializados en desarrollo</span>
+                                    <div
+                                        class="w-2 h-2 bg-red-400 rounded-full"
+                                    >
+                                    </div>
+                                    <span class="text-gray-700"
+                                        >Cursos especializados en desarrollo</span
+                                    >
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
-                                    <span class="text-gray-700">Desarrollo de Inteligencia Artificial</span>
+                                    <div
+                                        class="w-2 h-2 bg-red-400 rounded-full"
+                                    >
+                                    </div>
+                                    <span class="text-gray-700"
+                                        >Desarrollo de Inteligencia Artificial</span
+                                    >
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
-                                    <span class="text-gray-700">Ciberseguridad y protección de datos</span>
+                                    <div
+                                        class="w-2 h-2 bg-red-400 rounded-full"
+                                    >
+                                    </div>
+                                    <span class="text-gray-700"
+                                        >Ciberseguridad y protección de datos</span
+                                    >
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-orange-50 rounded-xl p-4 border border-orange-200">
-                            <h4 class="font-semibold text-orange-800 mb-2">Cursos Patrocinados</h4>
+                        <div
+                            class="bg-orange-50 rounded-xl p-4 border border-orange-200"
+                        >
+                            <h4 class="font-semibold text-orange-800 mb-2">
+                                Cursos Patrocinados
+                            </h4>
                             <p class="text-orange-700 text-sm">
-                                Buscar y completar cursos patrocinados por empresas grandes para fortalecer el perfil profesional.
+                                Buscar y completar cursos patrocinados por
+                                empresas grandes para fortalecer el perfil
+                                profesional.
                             </p>
                         </div>
                     </div>
@@ -211,93 +373,178 @@ import Layout from "../layout/Layout.astro";
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                <!-- Documentos Requeridos -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-indigo-200 flex flex-col min-h-[300px]">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-indigo-200 flex flex-col min-h-[300px]"
+                >
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-linear-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center shadow-md">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                ></path>
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-800">Documentos Requeridos</h2>
-                            <p class="text-indigo-600 font-medium">Identificación y viaje</p>
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                Documentos Requeridos
+                            </h2>
+                            <p class="text-indigo-600 font-medium">
+                                Identificación y viaje
+                            </p>
                         </div>
                     </div>
 
                     <div class="space-y-4 grow">
                         <div class="flex items-center gap-3">
-                            <div class="w-3 h-3 bg-indigo-400 rounded-full"></div>
-                            <span class="text-gray-700">Cédula de identidad</span>
+                            <div class="w-3 h-3 bg-indigo-400 rounded-full">
+                            </div>
+                            <span class="text-gray-700"
+                                >Cédula de identidad</span
+                            >
                         </div>
                         <div class="flex items-center gap-3">
-                            <div class="w-3 h-3 bg-indigo-400 rounded-full"></div>
+                            <div class="w-3 h-3 bg-indigo-400 rounded-full">
+                            </div>
                             <span class="text-gray-700">Pasaporte válido</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Fechas de Postulación -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-teal-200 flex flex-col min-h-[300px]">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-teal-200 flex flex-col min-h-[300px]"
+                >
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-linear-to-br from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                ></path>
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-800">Fechas de Postulación</h2>
-                            <p class="text-teal-600 font-medium">Períodos disponibles</p>
+                            <h2 class="text-2xl font-bold text-gray-800">
+                                Fechas de Postulación
+                            </h2>
+                            <p class="text-teal-600 font-medium">
+                                Períodos disponibles
+                            </p>
                         </div>
                     </div>
 
                     <div class="space-y-4 grow">
-                        <div class="bg-teal-50 rounded-lg p-4 border border-teal-200">
-                            <h4 class="font-semibold text-teal-800 mb-1">Tiempo Regular</h4>
+                        <div
+                            class="bg-teal-50 rounded-lg p-4 border border-teal-200"
+                        >
+                            <h4 class="font-semibold text-teal-800 mb-1">
+                                Tiempo Regular
+                            </h4>
                             <p class="text-teal-700">Septiembre - Octubre</p>
                         </div>
-                        <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                            <h4 class="font-semibold text-blue-800 mb-1">Con Tiempo</h4>
+                        <div
+                            class="bg-blue-50 rounded-lg p-4 border border-blue-200"
+                        >
+                            <h4 class="font-semibold text-blue-800 mb-1">
+                                Con Tiempo
+                            </h4>
                             <p class="text-blue-700">Abril - Mayo</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div
+                class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100"
+            >
                 <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Información Importante</h2>
-                    <p class="text-gray-600">Detalles adicionales sobre el programa de becas</p>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                        Información Importante
+                    </h2>
+                    <p class="text-gray-600">
+                        Detalles adicionales sobre el programa de becas
+                    </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            <div
+                                class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center"
+                            >
+                                <svg
+                                    class="w-5 h-5 text-green-600"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    ></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">Beca Francia</h3>
+                            <h3 class="text-xl font-bold text-gray-800">
+                                Beca Francia
+                            </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed">
-                            Programa de becas para estudiantes destacados que desean realizar intercambios académicos en universidades francesas.
-                            Incluye cobertura de matrícula, alojamiento y manutención durante el período de estudios.
+                            Programa de becas para estudiantes destacados que
+                            desean realizar intercambios académicos en
+                            universidades francesas. Incluye cobertura de
+                            matrícula, alojamiento y manutención durante el
+                            período de estudios.
                         </p>
                     </div>
 
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center"
+                            >
+                                <svg
+                                    class="w-5 h-5 text-blue-600"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                                    ></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">Beneficios Adicionales</h3>
+                            <h3 class="text-xl font-bold text-gray-800">
+                                Beneficios Adicionales
+                            </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed">
-                            Acceso a bibliotecas universitarias, laboratorios de investigación, eventos culturales y networking internacional.
-                            Oportunidad de aprender francés inmersivo y conocer una nueva cultura académica.
+                            Acceso a bibliotecas universitarias, laboratorios de
+                            investigación, eventos culturales y networking
+                            internacional. Oportunidad de aprender francés
+                            inmersivo y conocer una nueva cultura académica.
                         </p>
                     </div>
                 </div>
@@ -308,8 +555,13 @@ import Layout from "../layout/Layout.astro";
 
 <style>
     @keyframes pulse-slow {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.5; }
+        0%,
+        100% {
+            opacity: 0.3;
+        }
+        50% {
+            opacity: 0.5;
+        }
     }
     .animate-pulse-slow {
         animation: pulse-slow 6s ease-in-out infinite;
