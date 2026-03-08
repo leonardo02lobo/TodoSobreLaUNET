@@ -30,5 +30,21 @@
             "participantes": "Miguel Urbina y Santigo Paul",
             "duracion": "3 meses"
         }
+    },
+    {
+        "nombre": "NEXUS UNET",
+        "descripcion": "Repositorio digital cuya función es brindar a los estudiantes contenido académico de primera mano, revisado y aprobado por el departamento de cada materia asociado, para facilitar el desarrollo completo de sus habilidades.",
+        "materia": "Servicio Comunitario",
+        "tecnologias": ["Astro", "Vercel"],
+        "imagen": "https://i.postimg.cc/SK4hHKFt/NEXUNET.jpg",
+        "icono": "https://i.postimg.cc/nhbbQLzn/Nexus-UNET-logo.jpg",
+        "tipo": "Servicio Comunitario",
+        "estado": "En continuo desarrollo (Cualquiera puede apoyar al proyecto hablando con el jefe del departamento de matemática para añadir más contenido)",
+        "periodo": "2025-1",
+        "link": "https://nexus-unet.vercel.app/",
+        "estadisticas": {
+            "participantes": "Jeann Rodríguez, Kevin Zambrano, Grabriel Ulacio",
+            "duracion": "3 Meses"
+        }
     }
 ]

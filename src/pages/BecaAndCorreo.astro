@@ -1,4 +1,5 @@
 ---
+import HeaderSection from "../components/HeaderSection.jsx";
 import Layout from "../layout/Layout.astro";
 ---
 
@@ -11,29 +12,17 @@ import Layout from "../layout/Layout.astro";
         </div>
 
         <div class="relative max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-block">
-                    <div class="mb-4">
-                        <div class="w-20 h-20 bg-linear-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <HeaderSection 
+                title="Beca Estudiantil y "
+                subTitle="Correo Institucional"
+                description="Guía completa para solicitar tu beca y aprovechar los beneficios de tu correo estudiantil UNET"
+                >
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v6l9-5m-9 5l-9-5m9 5l9-5"></path>
                             </svg>
-                        </div>
-                    </div>
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-                        Beca Estudiantil y <br>
-                        <span class="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                            Correo Institucional
-                        </span>
-                    </h1>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Guía completa para solicitar tu beca y aprovechar los beneficios de tu correo estudiantil UNET
-                    </p>
-                </div>
-            </div>
-
+            </HeaderSection>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                 <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-blue-200 flex flex-col min-h-[420px]">
                     <div class="flex items-center gap-4 mb-6">

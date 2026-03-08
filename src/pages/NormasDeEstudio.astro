@@ -1,72 +1,110 @@
 ---
-import Card from "../components/Card"
-import Layout from "../layout/Layout.astro"
-import data from "./../data/Documento.json"
+import Card from "../components/Card";
+import HeaderSection from "../components/HeaderSection.jsx";
+import Layout from "../layout/Layout.astro";
+import data from "./../data/Documento.json";
 ---
 
 <Layout title="Normas de Estudio">
-    <section class="bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden min-h-screen">
+    <section
+        class="bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4 relative overflow-hidden min-h-screen"
+    >
         <div class="absolute inset-0 opacity-3">
-            <div class="absolute top-0 left-0 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"></div>
-            <div class="absolute top-0 right-0 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
-            <div class="absolute bottom-0 left-1/2 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"></div>
+            <div
+                class="absolute top-0 left-0 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow"
+            >
+            </div>
+            <div
+                class="absolute top-0 right-0 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-2000"
+            >
+            </div>
+            <div
+                class="absolute bottom-0 left-1/2 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow animation-delay-4000"
+            >
+            </div>
         </div>
 
         <div class="relative max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <div class="inline-block">
-                    <div class="mb-4">
-                        <div class="w-20 h-20 bg-linear-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-                        Normas de <br>
-                        <span class="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                            Estudio UNET
-                        </span>
-                    </h1>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Conoce todas las regulaciones y normativas académicas de la Universidad Nacional Experimental del Táchira
-                    </p>
-                </div>
-            </div>
-
+            <HeaderSection
+                title="Normas de"
+                subTitle="Estudio UNET"
+                description="Conoce todas las regulaciones y normativas académicas de la Universidad Nacional Experimental del Táchira"
+            >
+                <svg
+                    class="w-10 h-10 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    ></path>
+                </svg>
+            </HeaderSection>
             <div class="text-center mb-8">
-                <div class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100">
+                <div
+                    class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100"
+                >
                     <span class="text-gray-600">Mostrando</span>
-                    <span class="text-indigo-600 font-bold text-lg" id="normCount">{data.length}</span>
+                    <span
+                        class="text-indigo-600 font-bold text-lg"
+                        id="normCount">{data.length}</span
+                    >
                     <span class="text-gray-600">normas de estudio</span>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="cardsContainer">
-                {data.map((norma, index) => (
-                    <div class="norma-card" data-category="todas">
-                        <Card 
-                            title={norma.titulo} 
-                            content={norma.descripcion} 
-                            hora=""
-                            dias=""
-                            correo=""
-                            jefe_departamento=""
-                            client:load
-                        />
-                    </div>
-                ))}
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+                id="cardsContainer"
+            >
+                {
+                    data.map((norma, index) => (
+                        <div class="norma-card" data-category="todas">
+                            <Card
+                                title={norma.titulo}
+                                content={norma.descripcion}
+                                hora=""
+                                dias=""
+                                correo=""
+                                jefe_departamento=""
+                                client:load
+                            />
+                        </div>
+                    ))
+                }
             </div>
 
             <div id="noResults" class="hidden text-center py-12">
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md mx-auto">
-                    <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md mx-auto"
+                >
+                    <div
+                        class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    >
+                        <svg
+                            class="w-8 h-8 text-gray-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                            ></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">No se encontraron normas</h3>
-                    <p class="text-gray-600">Intenta con otros términos de búsqueda</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">
+                        No se encontraron normas
+                    </h3>
+                    <p class="text-gray-600">
+                        Intenta con otros términos de búsqueda
+                    </p>
                 </div>
             </div>
         </div>
@@ -74,8 +112,13 @@ import data from "./../data/Documento.json"
 
     <style>
         @keyframes pulse-slow {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 0.5; }
+            0%,
+            100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 0.5;
+            }
         }
         .animate-pulse-slow {
             animation: pulse-slow 6s ease-in-out infinite;
@@ -99,57 +142,67 @@ import data from "./../data/Documento.json"
     </style>
 
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            const searchInput = document.getElementById('searchInput');
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const allFilterButton = document.querySelector('.filter-active');
-            const normaCards = document.querySelectorAll('.norma-card');
-            const normCount = document.getElementById('normCount');
-            const noResults = document.getElementById('noResults');
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("searchInput");
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const allFilterButton = document.querySelector(".filter-active");
+            const normaCards = document.querySelectorAll(".norma-card");
+            const normCount = document.getElementById("normCount");
+            const noResults = document.getElementById("noResults");
 
             function filterNormas() {
                 const searchTerm = searchInput.value.toLowerCase();
                 let visibleCount = 0;
 
-                normaCards.forEach(card => {
-                    const title = card.querySelector('h2').textContent.toLowerCase();
-                    const content = card.querySelector('p').textContent.toLowerCase();
-                    const matchesSearch = title.includes(searchTerm) || content.includes(searchTerm);
-                    
+                normaCards.forEach((card) => {
+                    const title = card
+                        .querySelector("h2")
+                        .textContent.toLowerCase();
+                    const content = card
+                        .querySelector("p")
+                        .textContent.toLowerCase();
+                    const matchesSearch =
+                        title.includes(searchTerm) ||
+                        content.includes(searchTerm);
+
                     if (matchesSearch) {
-                        card.classList.remove('hidden');
+                        card.classList.remove("hidden");
                         visibleCount++;
                     } else {
-                        card.classList.add('hidden');
+                        card.classList.add("hidden");
                     }
                 });
 
                 normCount.textContent = visibleCount;
 
                 if (visibleCount === 0) {
-                    noResults.classList.remove('hidden');
+                    noResults.classList.remove("hidden");
                 } else {
-                    noResults.classList.add('hidden');
+                    noResults.classList.add("hidden");
                 }
             }
 
-            searchInput.addEventListener('input', filterNormas);
+            searchInput.addEventListener("input", filterNormas);
 
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-                    allFilterButton.classList.remove('filter-active');
-                    
-                    this.classList.add('filter-active');
-                    
+            filterButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    filterButtons.forEach((btn) =>
+                        btn.classList.remove("filter-active"),
+                    );
+                    allFilterButton.classList.remove("filter-active");
+
+                    this.classList.add("filter-active");
+
                     filterNormas();
                 });
             });
 
-            allFilterButton.addEventListener('click', function() {
-                filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-                this.classList.add('filter-active');
-                searchInput.value = '';
+            allFilterButton.addEventListener("click", function () {
+                filterButtons.forEach((btn) =>
+                    btn.classList.remove("filter-active"),
+                );
+                this.classList.add("filter-active");
+                searchInput.value = "";
                 filterNormas();
             });
 

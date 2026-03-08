@@ -1,0 +1,40 @@
+---
+interface Props {
+    title: string;
+    subTitle: string;
+    color: string;
+    hasButton?: boolean;
+    ColorSVGUP: string;
+    ColorSVGDW: string;
+    href?:string;
+    textButton?:string;
+}
+const { title, subTitle, color, hasButton, ColorSVGUP, ColorSVGDW, href, textButton } =
+    Astro.props as Props;
+---
+
+<div
+    class={`bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:border-${color}-200 text-center flex flex-col min-h-[400px]`}
+>
+    <div
+        class={`w-16 h-16 bg-linear-to-br from-${ColorSVGUP}-500 to-${ColorSVGDW}-500 rounded-2xl flex items-center justify-center shadow-md mx-auto mb-6`}
+    >
+        <slot name="icon" />
+    </div>
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">{title}</h2>
+    <p class="text-gray-600 mb-6 leading-relaxed grow">
+        {subTitle}
+    </p>
+    {
+        hasButton && (
+            <div class="mt-auto">
+                <a
+                    href={href}
+                    class={`inline-block bg-linear-to-r from-${ColorSVGUP}-500 to-${ColorSVGDW}-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-md hover:transform hover:scale-105 w-full`}
+                >
+                    {textButton}
+                </a>
+            </div>
+        )
+    }
+</div>

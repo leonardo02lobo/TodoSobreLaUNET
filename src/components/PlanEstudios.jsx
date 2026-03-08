@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import plan from "../data/Pensum.json";
+import HeaderSection from "./HeaderSection.jsx";
 
 const PlanEstudiosAvanzado = () => {
     const [selectedSemestre, setSelectedSemestre] = useState(plan[0].semestre);
@@ -44,29 +45,17 @@ const PlanEstudiosAvanzado = () => {
             </div>
 
             <div className="relative max-w-6xl mx-auto">
-                <div className="text-center mb-16">
-                    <div className="inline-block">
-                        <div className="mb-4">
-                            <div className="w-20 h-20 bg-linear-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-4">
-                                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14v6l9-5m-9 5l-9-5m9 5l9-5"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-                            Plan de Estudios <br />
-                            <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                                Ingeniería Informática
-                            </span>
-                        </h1>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Explora las materias de cada semestre y organiza tu trayectoria académica
-                        </p>
-                    </div>
-                </div>
-
+                <HeaderSection
+                    title="Plan de Estudios"
+                    subTitle="Ingeniería Informática"
+                    description="Explora las materias de cada semestre y organiza tu trayectoria académica"
+                >
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14v6l9-5m-9 5l-9-5m9 5l9-5"></path>
+                    </svg>
+                </HeaderSection>
                 <div className="mb-8">
                     <input
                         type="text"
@@ -82,8 +71,8 @@ const PlanEstudiosAvanzado = () => {
                         <button
                             key={semestre.semestre}
                             className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 border ${selectedSemestre === semestre.semestre
-                                    ? "bg-blue-600 text-white shadow-lg transform scale-105 border-blue-600"
-                                    : "bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-blue-50 hover:shadow-md border-gray-200 hover:border-blue-300"
+                                ? "bg-blue-600 text-white shadow-lg transform scale-105 border-blue-600"
+                                : "bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-blue-50 hover:shadow-md border-gray-200 hover:border-blue-300"
                                 }`}
                             onClick={() => {
                                 setSelectedSemestre(semestre.semestre);
