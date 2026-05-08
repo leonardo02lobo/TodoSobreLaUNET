@@ -76,14 +76,6 @@ const Header = () => {
         <nav className="container mx-auto px-6 py-6 fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-sm border-b border-cyan-400/20 z-50 rounded-b-4xl">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              {/* <div className="relative">
-                <div className="w-12 h-12 bg-linear-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center shadow-lg terminal-glow">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                </div>
-                <div className="absolute -inset-1 bg-cyan-400 rounded-lg blur opacity-30"></div>
-              </div> */}
               <a href="/" className="text-2xl font-bold text-white font-mono">
                 CEII-UNET
               </a>
@@ -210,6 +202,11 @@ const Header = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='flex w-full flex-col justify-center items-center m-4'>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScuJ4gM7WgD5vzFkqUWiK6qy85W1b26Yt2rSMhP0hlSH8huTg/viewform?usp=dialog" target='_blank' className="bg-cyan-500 text-gray-900 px-6 py-2 rounded-lg font-bold hover:bg-cyan-400 transition-all terminal-btn font-mono cursor-pointer">
+            Nuevo Ingreso
+          </a>
         </div>
       </div>
 
