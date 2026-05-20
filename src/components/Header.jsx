@@ -203,11 +203,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className='flex w-full flex-col justify-center items-center m-4'>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScuJ4gM7WgD5vzFkqUWiK6qy85W1b26Yt2rSMhP0hlSH8huTg/viewform?usp=dialog" target='_blank' className="bg-cyan-500 text-gray-900 px-6 py-2 rounded-lg font-bold hover:bg-cyan-400 transition-all terminal-btn font-mono cursor-pointer">
-            Nuevo Ingreso
-          </a>
-        </div>
       </div>
 
       <style jsx>{`
