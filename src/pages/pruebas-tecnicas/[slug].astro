@@ -1,0 +1,118 @@
+---
+import Layout from "../../layout/Layout.astro";
+import pruebas from "../../data/PruebasTecnicas.json";
+import type { PruebaTecnica } from "../../types/PruebasTecnicas";
+
+export function getStaticPaths() {
+    return (pruebas as PruebaTecnica[]).map((prueba) => ({
+        params: { slug: prueba.id },
+        props: { prueba },
+    }));
+}
+
+const { prueba } = Astro.props as { prueba: PruebaTecnica };
+
+const TIPO_ETIQUETA: Record<string, string> = {
+    parcial: "Parcial",
+    examen: "Examen",
+    quiz: "Quiz",
+};
+
+const archivoUrl = `/pruebas-tecnicas/${prueba.archivo}`;
+---
+
+<Layout title={`${prueba.titulo} - TodoSobreLaUNET`}>
+    <section
+        class="min-h-screen bg-linear-to-br from-slate-50 to-gray-100 py-16 px-4"
+    >
+        <div class="max-w-3xl mx-auto">
+            <a
+                href="/PruebasTecnicas"
+                class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium mb-8 transition-colors"
+            >
+                <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Volver a Pruebas Técnicas
+            </a>
+
+            <div
+                class="bg-white rounded-2xl p-8 lg:p-10 shadow-lg border border-gray-100"
+            >
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="inline-flex items-center gap-1 bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200"
+                    >
+                        {TIPO_ETIQUETA[prueba.tipo] || prueba.tipo}
+                    </span>
+                    <span class="text-xs font-mono text-gray-400 uppercase">
+                        {prueba.extension}
+                    </span>
+                </div>
+
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">
+                    {prueba.titulo}
+                </h1>
+                <p class="text-lg text-blue-600 font-medium mb-6">
+                    {prueba.materia}
+                </p>
+
+                {
+                    prueba.descripcion && (
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            {prueba.descripcion}
+                        </p>
+                    )
+                }
+
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                        <div class="text-xs text-gray-500 mb-1">
+                            Departamento
+                        </div>
+                        <div class="font-semibold text-gray-800">
+                            {prueba.departamento}
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                        <div class="text-xs text-gray-500 mb-1">Año</div>
+                        <div class="font-semibold text-gray-800">
+                            {prueba.anio}
+                        </div>
+                    </div>
+                </div>
+
+                <a
+                    href={archivoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 hover:shadow-lg"
+                >
+                    <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                        ></path>
+                    </svg>
+                    Ver / Descargar documento
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>

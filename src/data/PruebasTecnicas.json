@@ -1,0 +1,35 @@
+[
+  {
+    "id": "programacion-i-parcial-1-2024",
+    "titulo": "Parcial 1 - Programación I",
+    "materia": "Programación I",
+    "departamento": "Ing. Informática",
+    "anio": 2024,
+    "tipo": "parcial",
+    "archivo": "programacion-i-parcial-1-2024.pdf",
+    "extension": "pdf",
+    "descripcion": "Primer parcial de Programación I: estructuras de control, funciones y arreglos."
+  },
+  {
+    "id": "estructuras-discretas-examen-final-2023",
+    "titulo": "Examen Final - Estructuras Discretas",
+    "materia": "Estructuras Discretas",
+    "departamento": "Ing. Informática",
+    "anio": 2023,
+    "tipo": "examen",
+    "archivo": "estructuras-discretas-examen-final-2023.txt",
+    "extension": "txt",
+    "descripcion": "Examen final de Estructuras Discretas: lógica proposicional, conjuntos y teoría de grafos."
+  },
+  {
+    "id": "base-de-datos-quiz-2-2024",
+    "titulo": "Quiz 2 - Bases de Datos",
+    "materia": "Bases de Datos",
+    "departamento": "Ing. Informática",
+    "anio": 2024,
+    "tipo": "quiz",
+    "archivo": "base-de-datos-quiz-2-2024.pdf",
+    "extension": "pdf",
+    "descripcion": "Quiz sobre normalización y modelo entidad-relación."
+  }
+]

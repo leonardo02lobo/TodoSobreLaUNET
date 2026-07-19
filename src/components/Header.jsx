@@ -91,6 +91,9 @@ const Header = () => {
               <a href="/Eventos" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
                 Eventos
               </a>
+              <a href="/PruebasTecnicas" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
+                Pruebas Técnicas
+              </a>
               <a href="#footer" className="bg-cyan-500 text-gray-900 px-6 py-2 rounded-lg font-bold hover:bg-cyan-400 transition-all terminal-btn font-mono">
                 Contactar
               </a>
@@ -119,6 +122,9 @@ const Header = () => {
               </a>
               <a href="/Eventos" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
                 Eventos
+              </a>
+              <a href="/PruebasTecnicas" className="block text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-4 py-3 rounded border-l-2 border-transparent hover:border-cyan-400">
+                Pruebas Técnicas
               </a>
               <a href="#footer" className="block bg-cyan-500 text-gray-900 px-6 py-3 rounded-lg font-bold hover:bg-cyan-400 transition-all terminal-btn font-mono text-center mt-4">
                 Contactar
