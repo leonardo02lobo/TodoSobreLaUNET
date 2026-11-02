@@ -46,5 +46,22 @@
             "participantes": "Jeann Rodríguez, Kevin Zambrano, Grabriel Ulacio",
             "duracion": "3 Meses"
         }
+    },
+    {
+        "nombre": "Postgrado UNET",
+        "descripcion": "Plataforma web oficial para el Decanato de Postgrado de la UNET, desarrollada para centralizar la oferta académica, maestrías, doctorados, especializaciones y procesos de admisión en línea para la comunidad profesional.",
+        "materia": "Programacion II",
+        "tecnologias": ["Astro", "Tailwind CSS", "JavaScript", "Railway"],
+        "imagen": "/postgrado.webp",
+        "icono": "/logo-postgrado.png",
+        "tipo": "Feria de Programacion",
+        "estado": "Completado",
+        "periodo": "2025-2",
+        "link": "https://postgrado.unet.edu.ve/",
+        "enlace": "https://postgrado.unet.edu.ve/",
+        "estadisticas": {
+            "participantes": "Iryin Ortiz y Juan Luna",
+            "duracion": "3 meses"
+        }
     }
 ]

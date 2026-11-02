@@ -3,201 +3,146 @@
 ---
 
 <footer
-    class="bg-linear-to-t from-gray-900 to-gray-800 text-white pt-16 pb-8 px-4 border-t border-cyan-400/20 relative overflow-hidden"
+    class="bg-linear-to-b from-slate-50 via-emerald-50/20 to-slate-100 text-slate-800 pt-16 pb-8 px-4 border-t border-emerald-500/20 relative overflow-hidden"
     id="footer"
 >
-    <div class="absolute inset-0 opacity-5">
+    {/* Micro-malla de fondo idéntica al header */}
+    <div class="absolute inset-0 opacity-[0.04] pointer-events-none">
         <div class="grid grid-cols-12 gap-4 h-full">
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
-            <div class="col-span-1 border-r border-cyan-500"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
+            <div class="col-span-1 border-r border-emerald-600"></div>
             <div class="col-span-1"></div>
         </div>
     </div>
 
-    <div class="relative z-0 max-w-full mx-auto">
+    {/* Luces sutiles de ambiente */}
+    <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto">
         <div
-            class="bg-black/40 backdrop-blur-sm border border-cyan-400/30 rounded-xl p-6 mb-8 terminal-window"
+            class="bg-slate-900 text-slate-100 rounded-2xl p-6 mb-8 border border-emerald-500/30 shadow-xl shadow-slate-900/10 terminal-window"
         >
-            <div class="flex space-x-2 mb-4">
-                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+                <div class="flex space-x-2">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+                <span class="text-xs font-mono text-slate-400">ceii-bash - footer.status</span>
             </div>
 
             <div class="font-mono">
                 <div class="mb-4">
-                    <span class="text-green-400">ceii@unet.edu.ve:~$</span>
-                    <span class="text-white">footer --status</span>
+                    <span class="text-emerald-400">ceii@unet.edu.ve:~$</span>
+                    <span class="text-slate-100"> footer --status</span>
                 </div>
 
                 <div
-                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-cyan-100"
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-slate-200"
                 >
                     <div>
                         <div class="mb-2">
-                            <span class="text-purple-400">$></span>
-                            <span class="text-white">CENTRO_DE_ESTUDIANTES</span
-                            >
+                            <span class="text-emerald-400">$></span>
+                            <span class="text-white font-bold">CENTRO_DE_ESTUDIANTES</span>
                         </div>
-                        <p class="text-gray-300 mb-4 leading-relaxed text-sm">
+                        <p class="text-slate-300 mb-4 leading-relaxed text-sm">
                             > Plataforma desarrollada con dedicación para la
                             comunidad estudiantil de Ingeniería Informática de
                             la UNET.
                         </p>
 
-                        <div class="flex items-center gap-2 text-cyan-400 mb-4">
+                        <div class="flex items-center gap-2 text-emerald-400 mb-4">
                             <div
-                                class="w-2 h-2 bg-green-400 rounded-full animate-pulse"
+                                class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"
                             >
                             </div>
-                            <span class="font-mono text-sm"
-                                >STATUS: SYSTEM_ONLINE</span
+                            <span class="font-mono text-sm font-semibold"
+                                >STATUS: SYSTEM_ONLINE 🟢</span
                             >
                         </div>
 
                         <div class="mb-4">
-                            <div class="text-gray-400 text-sm mb-2">
+                            <div class="text-slate-400 text-xs mb-2.5">
                                 $ social_links --active
                             </div>
                             <nav class="flex gap-3">
                                 <a
                                     href="https://www.instagram.com/gciiunet/"
                                     target="_blank"
-                                    class="p-2 bg-gray-800 rounded-lg hover:bg-cyan-400/20 transition-all border border-gray-700 hover:border-cyan-400/50 group"
+                                    class="p-2.5 bg-slate-800/90 rounded-xl hover:bg-emerald-500/20 transition-all border border-slate-700 hover:border-emerald-400/50 group shadow-sm hover:scale-105"
                                 >
                                     <img
                                         src="/instagram.png"
                                         alt="Instagram"
-                                        class="w-8 h-8 rounded group-hover:scale-110 transition-transform"
+                                        class="w-7 h-7 rounded group-hover:scale-110 transition-transform"
                                     />
                                 </a>
                                 <a
                                     href="https://www.tiktok.com/@gciiunet?_t=ZM-90zkqvYUMRP&_r=1"
                                     target="_blank"
-                                    class="p-2 bg-gray-800 rounded-lg hover:bg-cyan-400/20 transition-all border border-gray-700 hover:border-cyan-400/50 group"
+                                    class="p-2.5 bg-slate-800/90 rounded-xl hover:bg-emerald-500/20 transition-all border border-slate-700 hover:border-emerald-400/50 group shadow-sm hover:scale-105"
                                 >
                                     <img
                                         src="/tiktok.png"
                                         alt="TikTok"
-                                        class="w-8 h-8 rounded group-hover:scale-110 transition-transform"
+                                        class="w-7 h-7 rounded group-hover:scale-110 transition-transform"
                                     />
                                 </a>
                                 <a
-                                    href="https://chat.whatsapp.com/HSMj2EIGo0eFo2g1bwCHJ6?mode=wwt"
+                                    href="https://chat.whatsapp.com/H5kB1tx2QKu0ojW2FOXkOA"
                                     target="_blank"
-                                    class="p-2 bg-gray-800 rounded-lg hover:bg-cyan-400/20 transition-all border border-gray-700 hover:border-cyan-400/50 group"
+                                    class="p-2.5 bg-slate-800/90 rounded-xl hover:bg-emerald-500/20 transition-all border border-slate-700 hover:border-emerald-400/50 group shadow-sm hover:scale-105"
                                 >
                                     <img
                                         src="/whatsApp.jpg"
-                                        alt="TikTok"
-                                        class="w-8 h-8 rounded group-hover:scale-110 transition-transform"
+                                        alt="WhatsApp"
+                                        class="w-7 h-7 rounded group-hover:scale-110 transition-transform"
                                     />
                                 </a>
                             </nav>
                         </div>
                     </div>
 
-                    <div>
-                        <!--<div class="mb-2">
-                            <span class="text-purple-400">$></span>
-                            <span class="text-white">DEV_TEAM --members</span>
+                    <div class="hidden lg:flex flex-col justify-end items-end pb-2">
+                        <div class="text-right font-mono text-xs text-slate-400 space-y-1">
+                            <div><span class="text-emerald-400">repo:</span> TodoSobreLaUNET</div>
+                            <div><span class="text-cyan-400">env:</span> production • 2026</div>
+                            <div class="text-slate-500">Universidad Nacional Experimental del Táchira</div>
                         </div>
-                        
-
-                        <div class="grid grid-cols-2 gap-3 text-sm">
-                            <a
-                                href="https://github.com/leonardo02lobo"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Leonardo Lobo
-                            </a>
-                            <a
-                                href="https://github.com/Moisesdavid2109"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Moises Becerra
-                            </a>
-                            <a
-                                href="https://github.com/ueydyfyfyyfr"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Miguel Urbina
-                            </a>
-                            <a
-                                href="https://github.com/IryiNeiThor"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Iryin Ortiz
-                            </a>
-                            <a
-                                href="https://github.com/SamanthaCala"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Samantha Cala
-                            </a>
-                            <a
-                                href="https://github.com/Mariavell"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Maria Avellaneda
-                            </a>
-                            <a
-                                href="https://github.com/DubraskaPerez"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Dubraska Perez
-                            </a>
-                            <a
-                                href="https://github.com/Valduz-Jose"
-                                target="_blank"
-                                class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
-                            >
-                                <span class="text-green-400">></span> Alejandro Valduz
-                            </a>
-                            <a href="/AcercaDe" class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30">
-                                    Acerca De Nosotros
-                                </a>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="border-t border-cyan-400/20 pt-6">
+        <div class="border-t border-slate-200/80 pt-6">
             <div
                 class="flex flex-col md:flex-row justify-between items-center gap-4 font-mono"
             >
-                <div class="text-cyan-300 text-sm">
-                    <span class="text-green-400">$</span>
-                    <span>copyright --year 2025</span>
+                <div class="text-slate-600 text-sm font-medium">
+                    <span class="text-emerald-600 font-bold">$</span>
+                    <span>copyright --year 2026</span>
                 </div>
-                <div class="flex items-center gap-4 text-gray-400 text-sm">
-                    <span class="text-green-400">></span>
+                <div class="flex items-center gap-2 text-slate-500 text-sm">
+                    <span class="text-emerald-500 font-bold">></span>
                     <span
-                        >Centro de Estudiantes - Ingeniería Informática UNET</span
+                        >Centro de Estudiantes • Ingeniería Informática UNET</span
                     >
                 </div>
-                <div class="text-cyan-400 text-sm">
-                    <span class="text-yellow-400">⚡</span>
+                <div class="text-emerald-600 text-sm font-semibold">
+                    <span class="text-amber-500">⚡</span>
                     <a
                         href="/AcercaDe"
-                        class="text-cyan-300 hover:text-cyan-400 transition-colors p-2 rounded hover:bg-cyan-400/10 border border-transparent hover:border-cyan-400/30"
+                        class="text-emerald-600 hover:text-emerald-700 transition-colors px-3 py-1.5 rounded-lg hover:bg-emerald-100/60"
                     >
                         Acerca de nosotros
                     </a>
@@ -210,8 +155,8 @@
 <style>
     .terminal-window {
         box-shadow:
-            0 0 30px rgba(34, 211, 238, 0.15),
-            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            0 10px 30px -10px rgba(16, 185, 129, 0.15),
+            0 0 0 1px rgba(16, 185, 129, 0.1);
     }
     @keyframes pulse {
         0%,
