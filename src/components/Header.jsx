@@ -83,7 +83,7 @@ const Header = () => {
 
             <div className="hidden md:flex items-center space-x-6">
               <a href="/" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
-                Inicio
+                Inicioo
               </a>
               <a href="/Proyectos" className="text-gray-400 hover:text-cyan-400 transition-all font-mono text-sm hover:bg-cyan-400/10 px-3 py-2 rounded border-b-2 border-transparent hover:border-cyan-400">
                 Proyectos
