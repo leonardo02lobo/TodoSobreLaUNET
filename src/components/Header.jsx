@@ -69,9 +69,9 @@ const Header = () => {
             <div className="flex items-center space-x-3">
               <a href="/" className="flex items-center gap-2.5 group">
                 <img
-                  src="/gceii-transparent.webp"
+                  src="/gceii.webp"
                   alt="CEII UNET"
-                  className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                  className="h-10 w-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-105"
                 />
                 <span className="text-xl font-bold font-mono tracking-tight text-emerald-600">
                   UNET
