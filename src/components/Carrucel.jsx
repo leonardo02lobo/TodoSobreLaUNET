@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 const ProyectosCarousel = ({ proyectos }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [failedImages, setFailedImages] = useState({});
 
     const nextProject = () => {
         setCurrentIndex((prevIndex) =>
@@ -34,6 +35,26 @@ const ProyectosCarousel = ({ proyectos }) => {
     }
 
     const proyecto = proyectos[currentIndex];
+    const imageFailed = Boolean(!proyecto.imagen || failedImages[proyecto.imagen]);
+
+    const projectHeader = (
+        <div className="flex flex-row items-center justify-center gap-5 mb-4">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 text-center group-hover:text-blue-600 transition-colors">
+                {proyecto.nombre}
+            </h1>
+            {proyecto.icono && (
+                <img
+                    key={proyecto.icono}
+                    src={proyecto.icono}
+                    alt={proyecto.nombre}
+                    className="w-14 h-14 object-contain rounded shrink-0 group-hover:scale-110 transition-transform"
+                    onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                    }}
+                />
+            )}
+        </div>
+    );
 
     return (
         <div className="relative max-w-6xl mx-auto">
@@ -44,44 +65,36 @@ const ProyectosCarousel = ({ proyectos }) => {
                     <div>
                         {proyecto.enlace ? (
                             <a href={proyecto.enlace} target="_blank" rel="noopener noreferrer" className="group">
-                                <div className="flex flex-row items-center justify-center gap-5 mb-4">
-                                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 text-center group-hover:text-blue-600 transition-colors">
-                                        {proyecto.nombre}
-                                    </h1>
-                                    {proyecto.icono && (
-                                        <img
-                                            src={proyecto.icono}
-                                            alt={proyecto.nombre}
-                                            className="w-14 h-14 rounded group-hover:scale-110 transition-transform"
-                                        />
-                                    )}
-                                </div>
+                                {projectHeader}
                             </a>
                         ) : (
-                            <div className="flex flex-row items-center justify-center gap-5 mb-4">
-                                <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 text-center">
-                                    {proyecto.nombre}
-                                </h1>
-                                {proyecto.icono && (
-                                    <img
-                                        src={proyecto.icono}
-                                        alt={proyecto.nombre}
-                                        className="w-14 h-14 rounded"
-                                    />
-                                )}
-                            </div>
+                            projectHeader
                         )}
                         <p className="text-lg text-gray-600 mb-6 text-center">
                             {proyecto.descripcion}
                         </p>
                     </div>
 
-                    <div className="mt-2">
-                        <img
-                            src={proyecto.imagen}
-                            alt={proyecto.nombre}
-                            className="w-full h-full max-h-96 object-cover rounded-xl shadow-md"
-                        />
+                    <div className="mt-2 w-full aspect-video bg-slate-100 rounded-xl overflow-hidden shadow-md border border-gray-200/70 flex items-center justify-center">
+                        {imageFailed ? (
+                            <div className="flex flex-col items-center justify-center text-gray-400 p-6 text-center">
+                                <svg className="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span className="text-sm">Imagen no disponible</span>
+                            </div>
+                        ) : (
+                            <img
+                                key={proyecto.imagen}
+                                src={proyecto.imagen}
+                                alt={proyecto.nombre}
+                                className="w-full h-full object-contain"
+                                loading="lazy"
+                                onError={() => {
+                                    setFailedImages((prev) => ({ ...prev, [proyecto.imagen]: true }));
+                                }}
+                            />
+                        )}
                     </div>
                 </div>
 
@@ -124,11 +137,11 @@ const ProyectosCarousel = ({ proyectos }) => {
                                 </div>
                             )}
 
-                            {proyecto.link === "" ? null : (
+                            {proyecto.link && (
                                 <div className="flex items-start space-x-3">
                                     <div className="w-2 h-2 bg-amber-950 rounded-full mt-2 shrink-0"></div>
                                     <p className="text-gray-600">
-                                        <strong className="text-gray-800">Accede al proyecto: <a href={proyecto.link} target='_blank' className='underline text-blue-600'>Link</a></strong>
+                                        <strong className="text-gray-800">Accede al proyecto: <a href={proyecto.link} target='_blank' rel="noopener noreferrer" className='underline text-blue-600'>Link</a></strong>
                                     </p>
                                 </div>
                             )}

@@ -5,7 +5,7 @@
         "materia": "Programacion II",
         "tecnologias": ["PHP,Kotlin,Dart"],
         "imagen": "https://i.ibb.co/MxkFX12q/IMG-20251101-WA0040.png",
-        "icono": "https://i.postimg.cc/25Zw09Nr/IMG-20251101-WA0038.jpg",
+        "icono": "",
         "tipo": "Feria de Programacion",
         "estado": "Completado",
         "periodo": "2025-1",
@@ -62,6 +62,23 @@
         "estadisticas": {
             "participantes": "Iryin Ortiz y Juan Luna",
             "duracion": "3 meses"
+        }
+    },
+    {
+        "nombre": "Pensum Informática UNET Vault",
+        "descripcion": "Vault de conocimiento en Obsidian estructurado alrededor del pensum completo de Ingeniería en Informática de la UNET, con 54 materias, 478 notas Markdown interconectadas y vista de grafo para explorar prelaciones y temas.",
+        "materia": "Todas las asignaturas",
+        "tecnologias": ["Obsidian", "Markdown", "Git", "GitHub"],
+        "imagen": "/obsidian-pensum-unet.png",
+        "icono": "/gceii.webp",
+        "tipo": "Proyecto Comunitario / Open Source",
+        "estado": "En continuo desarrollo",
+        "periodo": "2026-1",
+        "link": "https://github.com/leonardo02lobo/Pensum-Informatica-UNET-Vault",
+        "enlace": "https://github.com/leonardo02lobo/Pensum-Informatica-UNET-Vault",
+        "estadisticas": {
+            "participantes": "Leonardo Lobo",
+            "duracion": "Continuo"
         }
     }
 ]

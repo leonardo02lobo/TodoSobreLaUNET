@@ -13,6 +13,7 @@ export interface Proyecto {
     tecnologias: string[];
     imagen: string;
     icono?: string; 
+    link?: string;
     enlace?: string;
     tipo?: string; 
     estado?: string; 
