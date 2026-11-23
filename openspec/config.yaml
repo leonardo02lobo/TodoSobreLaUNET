@@ -1,0 +1,21 @@
+schema: spec-driven
+
+context: |
+  Proyecto: TodoSobreLaUNET (sitio web informativo y de recursos para estudiantes de Ingeniería en Informática de la UNET, CEII).
+  Tech stack: Astro 5, React 19, Tailwind CSS v4 (@tailwindcss/vite), TypeScript/JavaScript.
+  Idioma: UI, documentación y artefactos en español; commits con Conventional Commits.
+  Estructura clave:
+    - src/pages/*.astro: rutas estáticas del sitio.
+    - src/components/*.{astro,jsx}: componentes; usar .jsx con client:load solo para interactividad.
+    - src/data/*.json: datos estáticos (proyectos.json, Pensum.json, Departamentos.json, Documento.json).
+    - src/types/*.ts: interfaces TypeScript sincronizadas con src/data/.
+    - public/: assets estáticos locales (imágenes WebP/PNG/SVG, favicon /gceii.webp).
+  Ramas principales: main y develop (PRs salen de feature/*, fix/*, chore/* hacia develop).
+
+rules:
+  proposal:
+    - Redactar en español claro y conciso.
+    - Incluir siempre sección Impact indicando archivos, datos o assets afectados.
+  tasks:
+    - Dividir en tareas pequeñas, verificables y ordenadas por dependencias.
+    - Incluir siempre verificación final (validación de JSON/tipos y build si hay dependencias instaladas) y paso de PR hacia develop.
